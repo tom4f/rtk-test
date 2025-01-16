@@ -4,9 +4,9 @@
 
 V repozitáři je Next.js aplikace, která se spouští standardním způsobem. Pro správu balíčků používáme yarn.
 
-Aplikace již existuje nějakou dobu a i když byla lehce modernizovaná, není tam vše podle nejnovějších postupů a best practices. Taková je realita projektů. Proto jsi tu ty, ostřílený borec co se toho nezalekne a umí v tom chodit a pomůže nám to posunout dál.
+Aplikace již existuje nějakou dobu a i když byla lehce modernizovaná, není tam vše podle nejnovějších postupů a best practices. Taková je realita projektů. Proto jsi tu ty, ostřílený borec, co se toho nezalekne a umí v tom chodit a pomůže nám to posunout dál.
 
-Nové úkoly už samozřejmě zpracováváme pomoci novějších features našich vybraných nástrojů. Starých se chceme postupně zbavit a není tedy třeba držet jednotný styl ale tlačit aplikaci postupně dopředu. **Tím se prosím řiď při zpracování úkolů.**
+Nové úkoly už samozřejmě zpracováváme pomoci novějších features našich vybraných nástrojů. Starých se chceme postupně zbavit a není tedy třeba držet jednotný styl, ale tlačit aplikaci postupně dopředu. **Tím se prosím řiď při zpracování úkolů.**
 
 ### Omezení aplikace
 
@@ -25,8 +25,8 @@ Pro testování si tedy budeme muset vystačit s nimi.
 
 ## Zadání
 
-1. Dodělej, aby video po přehrání v přehrávači uvnitř aplikace do konce označilo samo jako dokončené.
-2. Potřebujeme rozběhat formulář na přidání nového seznamu videí a odebráních starých. Kolega už připravil UI komponenty ale vytvoření state a jejich napojení už bude na tobě. Pro state management prosím použij redux store.
+1. Dodělej, aby se video po přehrání do konce, v přehrávači uvnitř aplikace, samo označilo jako dokončené.
+2. Potřebujeme rozběhat formulář na přidání nového seznamu videí a odebrání starých. Kolega už připravil UI komponenty, ale vytvoření state a jejich napojení už bude na tobě. Pro state management prosím použij redux store.
 
 ### Dodání
 * veřejně dostupný zdrojový kód, např. na GitHub
