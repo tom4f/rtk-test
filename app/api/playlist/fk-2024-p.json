@@ -1,0 +1,3570 @@
+{
+    "playlistVideos": [
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "px0bFGk7hVZ9F_4UEbd-EzzzIz8",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5EMEEwRUY5M0RDRTU3NDJC",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:47:10Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Lukáš Havlíček - Jak jsme se rozloučili s GraphQL",
+                    "description": "Před více než rokem a půl jsme se rozhodli vydat vstříc zítřkům bez GraphQL. Přijďte si poslechnout co nás k tomu vedlo, jak se nám to povedlo a co nás tahle cesta naučila.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 0,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "k3zKfpA9CSw"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "k3zKfpA9CSw",
+            "title": "Lukáš Havlíček - Jak jsme se rozloučili s GraphQL",
+            "description": "Před více než rokem a půl jsme se rozhodli vydat vstříc zítřkům bez GraphQL. Přijďte si poslechnout co nás k tomu vedlo, jak se nám to povedlo a co nás tahle cesta naučila.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:47:10.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "px0bFGk7hVZ9F_4UEbd-EzzzIz8",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5EMEEwRUY5M0RDRTU3NDJC",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:47:10Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Lukáš Havlíček - Jak jsme se rozloučili s GraphQL",
+                        "description": "Před více než rokem a půl jsme se rozhodli vydat vstříc zítřkům bez GraphQL. Přijďte si poslechnout co nás k tomu vedlo, jak se nám to povedlo a co nás tahle cesta naučila.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 0,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "k3zKfpA9CSw"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "15cGOPqqeytiPE_5B7TQlpTv_a0",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi40NzZCMERDMjVEN0RFRThB",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:46:29Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Jan Horák - Cache Me If You Can Použití CDN v praxi",
+                    "description": "Zrychlete svůj web pomocí CDN: Praktický průvodce implementací a optimalizací pomocí Content Delivery Networks. Naučte se efektivně cachovat obsah, integrovat CDN do vašich projektů a využívat pokročilé techniky pro maximální výkon.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/JbS_do-NPKk/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/JbS_do-NPKk/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/JbS_do-NPKk/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/JbS_do-NPKk/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/JbS_do-NPKk/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 1,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "JbS_do-NPKk"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "JbS_do-NPKk",
+            "title": "Jan Horák - Cache Me If You Can Použití CDN v praxi",
+            "description": "Zrychlete svůj web pomocí CDN: Praktický průvodce implementací a optimalizací pomocí Content Delivery Networks. Naučte se efektivně cachovat obsah, integrovat CDN do vašich projektů a využívat pokročilé techniky pro maximální výkon.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:46:29.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "15cGOPqqeytiPE_5B7TQlpTv_a0",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi40NzZCMERDMjVEN0RFRThB",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:46:29Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jan Horák - Cache Me If You Can Použití CDN v praxi",
+                        "description": "Zrychlete svůj web pomocí CDN: Praktický průvodce implementací a optimalizací pomocí Content Delivery Networks. Naučte se efektivně cachovat obsah, integrovat CDN do vašich projektů a využívat pokročilé techniky pro maximální výkon.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 1,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "JbS_do-NPKk"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "m9el1yq3m3za9Q1k74KZkKDst-E",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5GNjNDRDREMDQxOThCMDQ2",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:45:48Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Martin Krištof - Měření performance mikro frontendů přes Speedcurve v Gitlab CI CD",
+                    "description": "\"Performance aplikací má nesporný vliv na konverze. Proto je měření rychlosti klíčové. Ale měřit rychlost vaší aplikace na produkci může být dost pozdě. Když optimalizujte výkon, potřebujete přece dopad změn vidět mnohem dříve! V Heurece jsme si vyzkoušeli integraci Speedcurve na naší vlastní implementaci měření rychlosti jednotlivých mikro-frontendů. Rozhodně to nebyla jednoduchá cesta, ale vzniklo nám jedinečné řešení, které ukazuje impact změn v aplikaci rovnou v rámci merge requestu v Gitlabu. Za poslední kvartál jsem zlepšili INP metriku o 40% a tento nástroj nám pomáhá nastavený trend minimálně dodržovat. A kdo řeší konverze ví, že čím dříve máte vliv změn změřený, tím lépe. Každá milisekunda se dá převést na peníze. Tak si přijďte poslechnout jak je ušetřit!\"",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 2,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "bgEJ3RKSPcs"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "bgEJ3RKSPcs",
+            "title": "Martin Krištof - Měření performance mikro frontendů přes Speedcurve v Gitlab CI CD",
+            "description": "\"Performance aplikací má nesporný vliv na konverze. Proto je měření rychlosti klíčové. Ale měřit rychlost vaší aplikace na produkci může být dost pozdě. Když optimalizujte výkon, potřebujete přece dopad změn vidět mnohem dříve! V Heurece jsme si vyzkoušeli integraci Speedcurve na naší vlastní implementaci měření rychlosti jednotlivých mikro-frontendů. Rozhodně to nebyla jednoduchá cesta, ale vzniklo nám jedinečné řešení, které ukazuje impact změn v aplikaci rovnou v rámci merge requestu v Gitlabu. Za poslední kvartál jsem zlepšili INP metriku o 40% a tento nástroj nám pomáhá nastavený trend minimálně dodržovat. A kdo řeší konverze ví, že čím dříve máte vliv změn změřený, tím lépe. Každá milisekunda se dá převést na peníze. Tak si přijďte poslechnout jak je ušetřit!\"",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:45:48.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "m9el1yq3m3za9Q1k74KZkKDst-E",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5GNjNDRDREMDQxOThCMDQ2",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:45:48Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Martin Krištof - Měření performance mikro frontendů přes Speedcurve v Gitlab CI CD",
+                        "description": "\"Performance aplikací má nesporný vliv na konverze. Proto je měření rychlosti klíčové. Ale měřit rychlost vaší aplikace na produkci může být dost pozdě. Když optimalizujte výkon, potřebujete přece dopad změn vidět mnohem dříve! V Heurece jsme si vyzkoušeli integraci Speedcurve na naší vlastní implementaci měření rychlosti jednotlivých mikro-frontendů. Rozhodně to nebyla jednoduchá cesta, ale vzniklo nám jedinečné řešení, které ukazuje impact změn v aplikaci rovnou v rámci merge requestu v Gitlabu. Za poslední kvartál jsem zlepšili INP metriku o 40% a tento nástroj nám pomáhá nastavený trend minimálně dodržovat. A kdo řeší konverze ví, že čím dříve máte vliv změn změřený, tím lépe. Každá milisekunda se dá převést na peníze. Tak si přijďte poslechnout jak je ušetřit!\"",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 2,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "bgEJ3RKSPcs"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "MocSXyuLIBW-ajbC3dceiwdAvTU",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi45NDk1REZENzhEMzU5MDQz",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:45:06Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Václav Kučera - Důležitost odstraňování věcí",
+                    "description": "Zjistěte, proč bychom se všichni měli zajímat o mazání stávajících funkcí, jak to může zlepšit naše produkty a jak se .NET stává příkladem nadbytku funkcí. Ať už jde o snížení kognitivní zátěže a nákladů na údržbu, umožnění hodnotnějších funkcí nebo zjednodušení uživatelského prostředí, odstraňování je výhrou pro všechny.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 3,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "KIqJuG2Vw0Q"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "KIqJuG2Vw0Q",
+            "title": "Václav Kučera - Důležitost odstraňování věcí",
+            "description": "Zjistěte, proč bychom se všichni měli zajímat o mazání stávajících funkcí, jak to může zlepšit naše produkty a jak se .NET stává příkladem nadbytku funkcí. Ať už jde o snížení kognitivní zátěže a nákladů na údržbu, umožnění hodnotnějších funkcí nebo zjednodušení uživatelského prostředí, odstraňování je výhrou pro všechny.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:45:06.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "MocSXyuLIBW-ajbC3dceiwdAvTU",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi45NDk1REZENzhEMzU5MDQz",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:45:06Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Václav Kučera - Důležitost odstraňování věcí",
+                        "description": "Zjistěte, proč bychom se všichni měli zajímat o mazání stávajících funkcí, jak to může zlepšit naše produkty a jak se .NET stává příkladem nadbytku funkcí. Ať už jde o snížení kognitivní zátěže a nákladů na údržbu, umožnění hodnotnějších funkcí nebo zjednodušení uživatelského prostředí, odstraňování je výhrou pro všechny.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 3,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "KIqJuG2Vw0Q"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "au_IizkzGZiwGMc_brOuujLT07Q",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5DQUNERDQ2NkIzRUQxNTY1",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:44:32Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Jan Kaiser - Angular Signals zabiják RxJS",
+                    "description": "Praktická ukázka jak fungují signals v Angularu, jak se liší od RxJS a kdy a na co je použít. Podíváme se i na to, kdy je vhodnější použít RxJS a proč z Angulařího ekosystému jen tak nezmizí",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 4,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "0hSA5blLAOQ"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "0hSA5blLAOQ",
+            "title": "Jan Kaiser - Angular Signals zabiják RxJS",
+            "description": "Praktická ukázka jak fungují signals v Angularu, jak se liší od RxJS a kdy a na co je použít. Podíváme se i na to, kdy je vhodnější použít RxJS a proč z Angulařího ekosystému jen tak nezmizí",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:44:32.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "au_IizkzGZiwGMc_brOuujLT07Q",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5DQUNERDQ2NkIzRUQxNTY1",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:44:32Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jan Kaiser - Angular Signals zabiják RxJS",
+                        "description": "Praktická ukázka jak fungují signals v Angularu, jak se liší od RxJS a kdy a na co je použít. Podíváme se i na to, kdy je vhodnější použít RxJS a proč z Angulařího ekosystému jen tak nezmizí",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 4,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "0hSA5blLAOQ"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "44ylsuthhcQS3Dc-UT3Uu1SfiWM",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MzJCQjBCNDIyRkJDN0VD",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:44:00Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Lukáš Trumm - Co to kutí v UnJS",
+                    "description": "\"Krátké představení několika balíčků z rodiny UnJS, které vznikly v rámci práce na Nuxt frameworku pro VueJS. Tyto nástroje se začínají používat i v jiných ekosystémech a sází na ně několik nových frameworků.\"",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 5,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "Io9eEDQEAoU"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "Io9eEDQEAoU",
+            "title": "Lukáš Trumm - Co to kutí v UnJS",
+            "description": "\"Krátké představení několika balíčků z rodiny UnJS, které vznikly v rámci práce na Nuxt frameworku pro VueJS. Tyto nástroje se začínají používat i v jiných ekosystémech a sází na ně několik nových frameworků.\"",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:44:00.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "44ylsuthhcQS3Dc-UT3Uu1SfiWM",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MzJCQjBCNDIyRkJDN0VD",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:44:00Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Lukáš Trumm - Co to kutí v UnJS",
+                        "description": "\"Krátké představení několika balíčků z rodiny UnJS, které vznikly v rámci práce na Nuxt frameworku pro VueJS. Tyto nástroje se začínají používat i v jiných ekosystémech a sází na ně několik nových frameworků.\"",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 5,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "Io9eEDQEAoU"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "RRY5CKVT5xTe6j8KzHlTpmDAxFM",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4xMkVGQjNCMUM1N0RFNEUx",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:43:31Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Jakub Goldmann, Martin Kopta - INP: proč je to právě 200 ms",
+                    "description": "Metrika Interactive Next Paint má práh nastavený na 200 ms. Jak ale Google přišel právě na tohle číslo? Proč je hranice 200 ms důležitá? Uděláme si výlet až do roku 1834, kdy německý psycholog Ernst Heinrich Weber formuloval zákon o rozdílovém prahu vnímání a přes eye-tracking a první použití počítačového terminálu plynule přejdeme k výzkumu MIT o nejkratším vnímatelném zobrazení a smysluplné obnovovací frekvenci obrazovek, abychom bezpečně přistáli u výzkumů Googlu na tohle téma a vlivu reakční doby webu na UX.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 6,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "z6YCN8m_EYs"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "z6YCN8m_EYs",
+            "title": "Jakub Goldmann, Martin Kopta - INP: proč je to právě 200 ms",
+            "description": "Metrika Interactive Next Paint má práh nastavený na 200 ms. Jak ale Google přišel právě na tohle číslo? Proč je hranice 200 ms důležitá? Uděláme si výlet až do roku 1834, kdy německý psycholog Ernst Heinrich Weber formuloval zákon o rozdílovém prahu vnímání a přes eye-tracking a první použití počítačového terminálu plynule přejdeme k výzkumu MIT o nejkratším vnímatelném zobrazení a smysluplné obnovovací frekvenci obrazovek, abychom bezpečně přistáli u výzkumů Googlu na tohle téma a vlivu reakční doby webu na UX.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:43:31.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "RRY5CKVT5xTe6j8KzHlTpmDAxFM",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4xMkVGQjNCMUM1N0RFNEUx",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:43:31Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jakub Goldmann, Martin Kopta - INP: proč je to právě 200 ms",
+                        "description": "Metrika Interactive Next Paint má práh nastavený na 200 ms. Jak ale Google přišel právě na tohle číslo? Proč je hranice 200 ms důležitá? Uděláme si výlet až do roku 1834, kdy německý psycholog Ernst Heinrich Weber formuloval zákon o rozdílovém prahu vnímání a přes eye-tracking a první použití počítačového terminálu plynule přejdeme k výzkumu MIT o nejkratším vnímatelném zobrazení a smysluplné obnovovací frekvenci obrazovek, abychom bezpečně přistáli u výzkumů Googlu na tohle téma a vlivu reakční doby webu na UX.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 6,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "z6YCN8m_EYs"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "QKWFwPmp57WRw0u2ocj-IYdUCMs",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wOTA3OTZBNzVEMTUzOTMy",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:42:41Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Ondřej Hajný - Mock Service Worker  využití pro testování i vývoj",
+                    "description": "Mockování requestů známe hlavně z testování (intercept v Cypressu, route v PlayWrightu, custom server v Jestu). Knihovna MSW (Mock Service Worker) nabízí možnost centralizace mockování pro využití jak v unit, integračních a e2e testech, tak i pro simulaci API dotazů při vývoji. Navíc přináší v beta releasu i podporu mockování WebSocket komunikace, která v ostatních řešeních pokulhává. Právě tuto novou funkcionalitu jsme použili na našem projektu a rád bych ukázal jednoduché demo FE aplikace s mockovanými daty.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 7,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "QTN5kgc0FFo"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "QTN5kgc0FFo",
+            "title": "Ondřej Hajný - Mock Service Worker  využití pro testování i vývoj",
+            "description": "Mockování requestů známe hlavně z testování (intercept v Cypressu, route v PlayWrightu, custom server v Jestu). Knihovna MSW (Mock Service Worker) nabízí možnost centralizace mockování pro využití jak v unit, integračních a e2e testech, tak i pro simulaci API dotazů při vývoji. Navíc přináší v beta releasu i podporu mockování WebSocket komunikace, která v ostatních řešeních pokulhává. Právě tuto novou funkcionalitu jsme použili na našem projektu a rád bych ukázal jednoduché demo FE aplikace s mockovanými daty.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:42:41.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "QKWFwPmp57WRw0u2ocj-IYdUCMs",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wOTA3OTZBNzVEMTUzOTMy",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:42:41Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Ondřej Hajný - Mock Service Worker  využití pro testování i vývoj",
+                        "description": "Mockování requestů známe hlavně z testování (intercept v Cypressu, route v PlayWrightu, custom server v Jestu). Knihovna MSW (Mock Service Worker) nabízí možnost centralizace mockování pro využití jak v unit, integračních a e2e testech, tak i pro simulaci API dotazů při vývoji. Navíc přináší v beta releasu i podporu mockování WebSocket komunikace, která v ostatních řešeních pokulhává. Právě tuto novou funkcionalitu jsme použili na našem projektu a rád bych ukázal jednoduché demo FE aplikace s mockovanými daty.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 7,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "QTN5kgc0FFo"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "XqSdAlh6G__5VszSwBIN_2JqflE",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MjE1MkI0OTQ2QzJGNzNG",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:42:04Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Martin Staněk - Jak AI mění možnosti vyhledávání na našich webech",
+                    "description": "OpenAI zásadně změnilo možnosti webového vyhledávání pro vaše projekty. Sémantické hledání bylo dříve doménou gigantů jako Google, nyní je snadno dostupné pro nás všechny. Ukážeme si, jak prakticky nasadit sémantické hledání na váš projekt a zásadně posunout relevanci a kvalitu výsledků.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 8,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "Oal3s7zB6dg"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "Oal3s7zB6dg",
+            "title": "Martin Staněk - Jak AI mění možnosti vyhledávání na našich webech",
+            "description": "OpenAI zásadně změnilo možnosti webového vyhledávání pro vaše projekty. Sémantické hledání bylo dříve doménou gigantů jako Google, nyní je snadno dostupné pro nás všechny. Ukážeme si, jak prakticky nasadit sémantické hledání na váš projekt a zásadně posunout relevanci a kvalitu výsledků.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:42:04.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "XqSdAlh6G__5VszSwBIN_2JqflE",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MjE1MkI0OTQ2QzJGNzNG",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:42:04Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Martin Staněk - Jak AI mění možnosti vyhledávání na našich webech",
+                        "description": "OpenAI zásadně změnilo možnosti webového vyhledávání pro vaše projekty. Sémantické hledání bylo dříve doménou gigantů jako Google, nyní je snadno dostupné pro nás všechny. Ukážeme si, jak prakticky nasadit sémantické hledání na váš projekt a zásadně posunout relevanci a kvalitu výsledků.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 8,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "Oal3s7zB6dg"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "778qctUPEcQ5QVceXhZw2Q6pGEE",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wMTcyMDhGQUE4NTIzM0Y5",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:41:32Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Michael Žabka - Importance of immutability",
+                    "description": "Při vývoji webových aplikací je stále větší tlak na rychlost a nízkou spotřebu paměti. To jde ruku v ruce se stále více vychytanýma fíčurama. Předvedu, jak se to snažíme dělat u nás, kde pracujeme s daty v řádů desetitisíců až stotisíců entit v rámci jednoho view.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/X4WHABkjBZk/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/X4WHABkjBZk/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/X4WHABkjBZk/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/X4WHABkjBZk/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/X4WHABkjBZk/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 9,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "X4WHABkjBZk"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "X4WHABkjBZk",
+            "title": "Michael Žabka - Importance of immutability",
+            "description": "Při vývoji webových aplikací je stále větší tlak na rychlost a nízkou spotřebu paměti. To jde ruku v ruce se stále více vychytanýma fíčurama. Předvedu, jak se to snažíme dělat u nás, kde pracujeme s daty v řádů desetitisíců až stotisíců entit v rámci jednoho view.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:41:32.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "778qctUPEcQ5QVceXhZw2Q6pGEE",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wMTcyMDhGQUE4NTIzM0Y5",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:41:32Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Michael Žabka - Importance of immutability",
+                        "description": "Při vývoji webových aplikací je stále větší tlak na rychlost a nízkou spotřebu paměti. To jde ruku v ruce se stále více vychytanýma fíčurama. Předvedu, jak se to snažíme dělat u nás, kde pracujeme s daty v řádů desetitisíců až stotisíců entit v rámci jednoho view.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 9,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "X4WHABkjBZk"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "iBQsDEKHfY-wqWhD-n8ClQ988_E",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4yODlGNEE0NkRGMEEzMEQy",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:40:44Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Jindřich Máca - Novinky v TypeScriptu",
+                    "description": "Prozkoumejte se mnou novinky, které byly v jazyce TypeScript doposud představeny v tomto roce, poté se pojďme společně podívat, co nabídne nadcházející aktualizace 5.6, a také zjistit, co se ještě chystá a co by mohlo být vydáno do konce tohoto roku. To vše s konkrétními příklady i s vysvětlením, proč to pro nás jako vývojáře může být užitečné v praxi.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 10,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "yRDOwuyPGsc"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "yRDOwuyPGsc",
+            "title": "Jindřich Máca - Novinky v TypeScriptu",
+            "description": "Prozkoumejte se mnou novinky, které byly v jazyce TypeScript doposud představeny v tomto roce, poté se pojďme společně podívat, co nabídne nadcházející aktualizace 5.6, a také zjistit, co se ještě chystá a co by mohlo být vydáno do konce tohoto roku. To vše s konkrétními příklady i s vysvětlením, proč to pro nás jako vývojáře může být užitečné v praxi.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:40:44.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "iBQsDEKHfY-wqWhD-n8ClQ988_E",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4yODlGNEE0NkRGMEEzMEQy",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:40:44Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jindřich Máca - Novinky v TypeScriptu",
+                        "description": "Prozkoumejte se mnou novinky, které byly v jazyce TypeScript doposud představeny v tomto roce, poté se pojďme společně podívat, co nabídne nadcházející aktualizace 5.6, a také zjistit, co se ještě chystá a co by mohlo být vydáno do konce tohoto roku. To vše s konkrétními příklady i s vysvětlením, proč to pro nás jako vývojáře může být užitečné v praxi.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 10,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "yRDOwuyPGsc"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        },
+        {
+            "type": "video",
+            "raw": {
+                "kind": "youtube#playlistItem",
+                "etag": "Z0znCfO638RS5dL4TKerAeXZ2KA",
+                "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41NkI0NEY2RDEwNTU3Q0M2",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:40:09Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Jakub Miskech - What I Learned in 1000+ Heads Start up",
+                    "description": "Ako vás pridanie ďalších procesov môže skutočne zrýchliť – znie to zvláštne, však? Podelím sa o to, čo som sa naučil pri práci, kde vyladenie nášho pracovného postupu pomocou tých správnych procesov prinieslo obrovský rozdiel. Porozprávame sa o jednoduchých spôsoboch, ako si lepšie zorganizovať prácu, urýchliť dodávanie projektov a urobiť váš každodenný inžiniersky život oveľa plynulejším.",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                    "position": 11,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": "XST2uRGgSPQ"
+                    },
+                    "videoOwnerChannelTitle": "Frontendisti",
+                    "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                },
+                "status": {
+                    "privacyStatus": "public"
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlistItem",
+            "id": "XST2uRGgSPQ",
+            "title": "Jakub Miskech - What I Learned in 1000+ Heads Start up",
+            "description": "Ako vás pridanie ďalších procesov môže skutočne zrýchliť – znie to zvláštne, však? Podelím sa o to, čo som sa naučil pri práci, kde vyladenie nášho pracovného postupu pomocou tých správnych procesov prinieslo obrovský rozdiel. Porozprávame sa o jednoduchých spôsoboch, ako si lepšie zorganizovať prácu, urýchliť dodávanie projektov a urobiť váš každodenný inžiniersky život oveľa plynulejším.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                },
+                "standard": {
+                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                },
+                "maxres": {
+                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            "publishedAt": "2024-11-05T10:40:09.000Z",
+            "channel": {
+                "type": "channel",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "Z0znCfO638RS5dL4TKerAeXZ2KA",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41NkI0NEY2RDEwNTU3Q0M2",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:40:09Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jakub Miskech - What I Learned in 1000+ Heads Start up",
+                        "description": "Ako vás pridanie ďalších procesov môže skutočne zrýchliť – znie to zvláštne, však? Podelím sa o to, čo som sa naučil pri práci, kde vyladenie nášho pracovného postupu pomocou tých správnych procesov prinieslo obrovský rozdiel. Porozprávame sa o jednoduchých spôsoboch, ako si lepšie zorganizovať prácu, urýchliť dodávanie projektov a urobiť váš každodenný inžiniersky život oveľa plynulejším.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 11,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "XST2uRGgSPQ"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "Frontendisti"
+            }
+        }
+    ],
+    "playlist": {
+        "type": "playlist",
+        "videos": [
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "px0bFGk7hVZ9F_4UEbd-EzzzIz8",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5EMEEwRUY5M0RDRTU3NDJC",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:47:10Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Lukáš Havlíček - Jak jsme se rozloučili s GraphQL",
+                        "description": "Před více než rokem a půl jsme se rozhodli vydat vstříc zítřkům bez GraphQL. Přijďte si poslechnout co nás k tomu vedlo, jak se nám to povedlo a co nás tahle cesta naučila.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 0,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "k3zKfpA9CSw"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "k3zKfpA9CSw",
+                "title": "Lukáš Havlíček - Jak jsme se rozloučili s GraphQL",
+                "description": "Před více než rokem a půl jsme se rozhodli vydat vstříc zítřkům bez GraphQL. Přijďte si poslechnout co nás k tomu vedlo, jak se nám to povedlo a co nás tahle cesta naučila.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:47:10.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "px0bFGk7hVZ9F_4UEbd-EzzzIz8",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5EMEEwRUY5M0RDRTU3NDJC",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:47:10Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Lukáš Havlíček - Jak jsme se rozloučili s GraphQL",
+                            "description": "Před více než rokem a půl jsme se rozhodli vydat vstříc zítřkům bez GraphQL. Přijďte si poslechnout co nás k tomu vedlo, jak se nám to povedlo a co nás tahle cesta naučila.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 0,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "k3zKfpA9CSw"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "15cGOPqqeytiPE_5B7TQlpTv_a0",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi40NzZCMERDMjVEN0RFRThB",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:46:29Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jan Horák - Cache Me If You Can Použití CDN v praxi",
+                        "description": "Zrychlete svůj web pomocí CDN: Praktický průvodce implementací a optimalizací pomocí Content Delivery Networks. Naučte se efektivně cachovat obsah, integrovat CDN do vašich projektů a využívat pokročilé techniky pro maximální výkon.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/JbS_do-NPKk/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 1,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "JbS_do-NPKk"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "JbS_do-NPKk",
+                "title": "Jan Horák - Cache Me If You Can Použití CDN v praxi",
+                "description": "Zrychlete svůj web pomocí CDN: Praktický průvodce implementací a optimalizací pomocí Content Delivery Networks. Naučte se efektivně cachovat obsah, integrovat CDN do vašich projektů a využívat pokročilé techniky pro maximální výkon.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JbS_do-NPKk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JbS_do-NPKk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JbS_do-NPKk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/JbS_do-NPKk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/JbS_do-NPKk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:46:29.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "15cGOPqqeytiPE_5B7TQlpTv_a0",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi40NzZCMERDMjVEN0RFRThB",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:46:29Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Jan Horák - Cache Me If You Can Použití CDN v praxi",
+                            "description": "Zrychlete svůj web pomocí CDN: Praktický průvodce implementací a optimalizací pomocí Content Delivery Networks. Naučte se efektivně cachovat obsah, integrovat CDN do vašich projektů a využívat pokročilé techniky pro maximální výkon.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/JbS_do-NPKk/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 1,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "JbS_do-NPKk"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "m9el1yq3m3za9Q1k74KZkKDst-E",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5GNjNDRDREMDQxOThCMDQ2",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:45:48Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Martin Krištof - Měření performance mikro frontendů přes Speedcurve v Gitlab CI CD",
+                        "description": "\"Performance aplikací má nesporný vliv na konverze. Proto je měření rychlosti klíčové. Ale měřit rychlost vaší aplikace na produkci může být dost pozdě. Když optimalizujte výkon, potřebujete přece dopad změn vidět mnohem dříve! V Heurece jsme si vyzkoušeli integraci Speedcurve na naší vlastní implementaci měření rychlosti jednotlivých mikro-frontendů. Rozhodně to nebyla jednoduchá cesta, ale vzniklo nám jedinečné řešení, které ukazuje impact změn v aplikaci rovnou v rámci merge requestu v Gitlabu. Za poslední kvartál jsem zlepšili INP metriku o 40% a tento nástroj nám pomáhá nastavený trend minimálně dodržovat. A kdo řeší konverze ví, že čím dříve máte vliv změn změřený, tím lépe. Každá milisekunda se dá převést na peníze. Tak si přijďte poslechnout jak je ušetřit!\"",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 2,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "bgEJ3RKSPcs"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "bgEJ3RKSPcs",
+                "title": "Martin Krištof - Měření performance mikro frontendů přes Speedcurve v Gitlab CI CD",
+                "description": "\"Performance aplikací má nesporný vliv na konverze. Proto je měření rychlosti klíčové. Ale měřit rychlost vaší aplikace na produkci může být dost pozdě. Když optimalizujte výkon, potřebujete přece dopad změn vidět mnohem dříve! V Heurece jsme si vyzkoušeli integraci Speedcurve na naší vlastní implementaci měření rychlosti jednotlivých mikro-frontendů. Rozhodně to nebyla jednoduchá cesta, ale vzniklo nám jedinečné řešení, které ukazuje impact změn v aplikaci rovnou v rámci merge requestu v Gitlabu. Za poslední kvartál jsem zlepšili INP metriku o 40% a tento nástroj nám pomáhá nastavený trend minimálně dodržovat. A kdo řeší konverze ví, že čím dříve máte vliv změn změřený, tím lépe. Každá milisekunda se dá převést na peníze. Tak si přijďte poslechnout jak je ušetřit!\"",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:45:48.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "m9el1yq3m3za9Q1k74KZkKDst-E",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5GNjNDRDREMDQxOThCMDQ2",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:45:48Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Martin Krištof - Měření performance mikro frontendů přes Speedcurve v Gitlab CI CD",
+                            "description": "\"Performance aplikací má nesporný vliv na konverze. Proto je měření rychlosti klíčové. Ale měřit rychlost vaší aplikace na produkci může být dost pozdě. Když optimalizujte výkon, potřebujete přece dopad změn vidět mnohem dříve! V Heurece jsme si vyzkoušeli integraci Speedcurve na naší vlastní implementaci měření rychlosti jednotlivých mikro-frontendů. Rozhodně to nebyla jednoduchá cesta, ale vzniklo nám jedinečné řešení, které ukazuje impact změn v aplikaci rovnou v rámci merge requestu v Gitlabu. Za poslední kvartál jsem zlepšili INP metriku o 40% a tento nástroj nám pomáhá nastavený trend minimálně dodržovat. A kdo řeší konverze ví, že čím dříve máte vliv změn změřený, tím lépe. Každá milisekunda se dá převést na peníze. Tak si přijďte poslechnout jak je ušetřit!\"",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/bgEJ3RKSPcs/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 2,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "bgEJ3RKSPcs"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "MocSXyuLIBW-ajbC3dceiwdAvTU",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi45NDk1REZENzhEMzU5MDQz",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:45:06Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Václav Kučera - Důležitost odstraňování věcí",
+                        "description": "Zjistěte, proč bychom se všichni měli zajímat o mazání stávajících funkcí, jak to může zlepšit naše produkty a jak se .NET stává příkladem nadbytku funkcí. Ať už jde o snížení kognitivní zátěže a nákladů na údržbu, umožnění hodnotnějších funkcí nebo zjednodušení uživatelského prostředí, odstraňování je výhrou pro všechny.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 3,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "KIqJuG2Vw0Q"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "KIqJuG2Vw0Q",
+                "title": "Václav Kučera - Důležitost odstraňování věcí",
+                "description": "Zjistěte, proč bychom se všichni měli zajímat o mazání stávajících funkcí, jak to může zlepšit naše produkty a jak se .NET stává příkladem nadbytku funkcí. Ať už jde o snížení kognitivní zátěže a nákladů na údržbu, umožnění hodnotnějších funkcí nebo zjednodušení uživatelského prostředí, odstraňování je výhrou pro všechny.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:45:06.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "MocSXyuLIBW-ajbC3dceiwdAvTU",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi45NDk1REZENzhEMzU5MDQz",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:45:06Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Václav Kučera - Důležitost odstraňování věcí",
+                            "description": "Zjistěte, proč bychom se všichni měli zajímat o mazání stávajících funkcí, jak to může zlepšit naše produkty a jak se .NET stává příkladem nadbytku funkcí. Ať už jde o snížení kognitivní zátěže a nákladů na údržbu, umožnění hodnotnějších funkcí nebo zjednodušení uživatelského prostředí, odstraňování je výhrou pro všechny.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/KIqJuG2Vw0Q/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 3,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "KIqJuG2Vw0Q"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "au_IizkzGZiwGMc_brOuujLT07Q",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5DQUNERDQ2NkIzRUQxNTY1",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:44:32Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jan Kaiser - Angular Signals zabiják RxJS",
+                        "description": "Praktická ukázka jak fungují signals v Angularu, jak se liší od RxJS a kdy a na co je použít. Podíváme se i na to, kdy je vhodnější použít RxJS a proč z Angulařího ekosystému jen tak nezmizí",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 4,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "0hSA5blLAOQ"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "0hSA5blLAOQ",
+                "title": "Jan Kaiser - Angular Signals zabiják RxJS",
+                "description": "Praktická ukázka jak fungují signals v Angularu, jak se liší od RxJS a kdy a na co je použít. Podíváme se i na to, kdy je vhodnější použít RxJS a proč z Angulařího ekosystému jen tak nezmizí",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:44:32.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "au_IizkzGZiwGMc_brOuujLT07Q",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi5DQUNERDQ2NkIzRUQxNTY1",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:44:32Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Jan Kaiser - Angular Signals zabiják RxJS",
+                            "description": "Praktická ukázka jak fungují signals v Angularu, jak se liší od RxJS a kdy a na co je použít. Podíváme se i na to, kdy je vhodnější použít RxJS a proč z Angulařího ekosystému jen tak nezmizí",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/0hSA5blLAOQ/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 4,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "0hSA5blLAOQ"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "44ylsuthhcQS3Dc-UT3Uu1SfiWM",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MzJCQjBCNDIyRkJDN0VD",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:44:00Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Lukáš Trumm - Co to kutí v UnJS",
+                        "description": "\"Krátké představení několika balíčků z rodiny UnJS, které vznikly v rámci práce na Nuxt frameworku pro VueJS. Tyto nástroje se začínají používat i v jiných ekosystémech a sází na ně několik nových frameworků.\"",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 5,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "Io9eEDQEAoU"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "Io9eEDQEAoU",
+                "title": "Lukáš Trumm - Co to kutí v UnJS",
+                "description": "\"Krátké představení několika balíčků z rodiny UnJS, které vznikly v rámci práce na Nuxt frameworku pro VueJS. Tyto nástroje se začínají používat i v jiných ekosystémech a sází na ně několik nových frameworků.\"",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:44:00.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "44ylsuthhcQS3Dc-UT3Uu1SfiWM",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MzJCQjBCNDIyRkJDN0VD",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:44:00Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Lukáš Trumm - Co to kutí v UnJS",
+                            "description": "\"Krátké představení několika balíčků z rodiny UnJS, které vznikly v rámci práce na Nuxt frameworku pro VueJS. Tyto nástroje se začínají používat i v jiných ekosystémech a sází na ně několik nových frameworků.\"",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/Io9eEDQEAoU/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 5,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "Io9eEDQEAoU"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "RRY5CKVT5xTe6j8KzHlTpmDAxFM",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4xMkVGQjNCMUM1N0RFNEUx",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:43:31Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jakub Goldmann, Martin Kopta - INP: proč je to právě 200 ms",
+                        "description": "Metrika Interactive Next Paint má práh nastavený na 200 ms. Jak ale Google přišel právě na tohle číslo? Proč je hranice 200 ms důležitá? Uděláme si výlet až do roku 1834, kdy německý psycholog Ernst Heinrich Weber formuloval zákon o rozdílovém prahu vnímání a přes eye-tracking a první použití počítačového terminálu plynule přejdeme k výzkumu MIT o nejkratším vnímatelném zobrazení a smysluplné obnovovací frekvenci obrazovek, abychom bezpečně přistáli u výzkumů Googlu na tohle téma a vlivu reakční doby webu na UX.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 6,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "z6YCN8m_EYs"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "z6YCN8m_EYs",
+                "title": "Jakub Goldmann, Martin Kopta - INP: proč je to právě 200 ms",
+                "description": "Metrika Interactive Next Paint má práh nastavený na 200 ms. Jak ale Google přišel právě na tohle číslo? Proč je hranice 200 ms důležitá? Uděláme si výlet až do roku 1834, kdy německý psycholog Ernst Heinrich Weber formuloval zákon o rozdílovém prahu vnímání a přes eye-tracking a první použití počítačového terminálu plynule přejdeme k výzkumu MIT o nejkratším vnímatelném zobrazení a smysluplné obnovovací frekvenci obrazovek, abychom bezpečně přistáli u výzkumů Googlu na tohle téma a vlivu reakční doby webu na UX.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:43:31.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "RRY5CKVT5xTe6j8KzHlTpmDAxFM",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4xMkVGQjNCMUM1N0RFNEUx",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:43:31Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Jakub Goldmann, Martin Kopta - INP: proč je to právě 200 ms",
+                            "description": "Metrika Interactive Next Paint má práh nastavený na 200 ms. Jak ale Google přišel právě na tohle číslo? Proč je hranice 200 ms důležitá? Uděláme si výlet až do roku 1834, kdy německý psycholog Ernst Heinrich Weber formuloval zákon o rozdílovém prahu vnímání a přes eye-tracking a první použití počítačového terminálu plynule přejdeme k výzkumu MIT o nejkratším vnímatelném zobrazení a smysluplné obnovovací frekvenci obrazovek, abychom bezpečně přistáli u výzkumů Googlu na tohle téma a vlivu reakční doby webu na UX.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/z6YCN8m_EYs/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 6,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "z6YCN8m_EYs"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "QKWFwPmp57WRw0u2ocj-IYdUCMs",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wOTA3OTZBNzVEMTUzOTMy",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:42:41Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Ondřej Hajný - Mock Service Worker  využití pro testování i vývoj",
+                        "description": "Mockování requestů známe hlavně z testování (intercept v Cypressu, route v PlayWrightu, custom server v Jestu). Knihovna MSW (Mock Service Worker) nabízí možnost centralizace mockování pro využití jak v unit, integračních a e2e testech, tak i pro simulaci API dotazů při vývoji. Navíc přináší v beta releasu i podporu mockování WebSocket komunikace, která v ostatních řešeních pokulhává. Právě tuto novou funkcionalitu jsme použili na našem projektu a rád bych ukázal jednoduché demo FE aplikace s mockovanými daty.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 7,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "QTN5kgc0FFo"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "QTN5kgc0FFo",
+                "title": "Ondřej Hajný - Mock Service Worker  využití pro testování i vývoj",
+                "description": "Mockování requestů známe hlavně z testování (intercept v Cypressu, route v PlayWrightu, custom server v Jestu). Knihovna MSW (Mock Service Worker) nabízí možnost centralizace mockování pro využití jak v unit, integračních a e2e testech, tak i pro simulaci API dotazů při vývoji. Navíc přináší v beta releasu i podporu mockování WebSocket komunikace, která v ostatních řešeních pokulhává. Právě tuto novou funkcionalitu jsme použili na našem projektu a rád bych ukázal jednoduché demo FE aplikace s mockovanými daty.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:42:41.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "QKWFwPmp57WRw0u2ocj-IYdUCMs",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wOTA3OTZBNzVEMTUzOTMy",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:42:41Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Ondřej Hajný - Mock Service Worker  využití pro testování i vývoj",
+                            "description": "Mockování requestů známe hlavně z testování (intercept v Cypressu, route v PlayWrightu, custom server v Jestu). Knihovna MSW (Mock Service Worker) nabízí možnost centralizace mockování pro využití jak v unit, integračních a e2e testech, tak i pro simulaci API dotazů při vývoji. Navíc přináší v beta releasu i podporu mockování WebSocket komunikace, která v ostatních řešeních pokulhává. Právě tuto novou funkcionalitu jsme použili na našem projektu a rád bych ukázal jednoduché demo FE aplikace s mockovanými daty.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/QTN5kgc0FFo/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 7,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "QTN5kgc0FFo"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "XqSdAlh6G__5VszSwBIN_2JqflE",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MjE1MkI0OTQ2QzJGNzNG",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:42:04Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Martin Staněk - Jak AI mění možnosti vyhledávání na našich webech",
+                        "description": "OpenAI zásadně změnilo možnosti webového vyhledávání pro vaše projekty. Sémantické hledání bylo dříve doménou gigantů jako Google, nyní je snadno dostupné pro nás všechny. Ukážeme si, jak prakticky nasadit sémantické hledání na váš projekt a zásadně posunout relevanci a kvalitu výsledků.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 8,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "Oal3s7zB6dg"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "Oal3s7zB6dg",
+                "title": "Martin Staněk - Jak AI mění možnosti vyhledávání na našich webech",
+                "description": "OpenAI zásadně změnilo možnosti webového vyhledávání pro vaše projekty. Sémantické hledání bylo dříve doménou gigantů jako Google, nyní je snadno dostupné pro nás všechny. Ukážeme si, jak prakticky nasadit sémantické hledání na váš projekt a zásadně posunout relevanci a kvalitu výsledků.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:42:04.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "XqSdAlh6G__5VszSwBIN_2JqflE",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41MjE1MkI0OTQ2QzJGNzNG",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:42:04Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Martin Staněk - Jak AI mění možnosti vyhledávání na našich webech",
+                            "description": "OpenAI zásadně změnilo možnosti webového vyhledávání pro vaše projekty. Sémantické hledání bylo dříve doménou gigantů jako Google, nyní je snadno dostupné pro nás všechny. Ukážeme si, jak prakticky nasadit sémantické hledání na váš projekt a zásadně posunout relevanci a kvalitu výsledků.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/Oal3s7zB6dg/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 8,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "Oal3s7zB6dg"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "778qctUPEcQ5QVceXhZw2Q6pGEE",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wMTcyMDhGQUE4NTIzM0Y5",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:41:32Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Michael Žabka - Importance of immutability",
+                        "description": "Při vývoji webových aplikací je stále větší tlak na rychlost a nízkou spotřebu paměti. To jde ruku v ruce se stále více vychytanýma fíčurama. Předvedu, jak se to snažíme dělat u nás, kde pracujeme s daty v řádů desetitisíců až stotisíců entit v rámci jednoho view.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/X4WHABkjBZk/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 9,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "X4WHABkjBZk"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "X4WHABkjBZk",
+                "title": "Michael Žabka - Importance of immutability",
+                "description": "Při vývoji webových aplikací je stále větší tlak na rychlost a nízkou spotřebu paměti. To jde ruku v ruce se stále více vychytanýma fíčurama. Předvedu, jak se to snažíme dělat u nás, kde pracujeme s daty v řádů desetitisíců až stotisíců entit v rámci jednoho view.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/X4WHABkjBZk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/X4WHABkjBZk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/X4WHABkjBZk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/X4WHABkjBZk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/X4WHABkjBZk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:41:32.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "778qctUPEcQ5QVceXhZw2Q6pGEE",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4wMTcyMDhGQUE4NTIzM0Y5",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:41:32Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Michael Žabka - Importance of immutability",
+                            "description": "Při vývoji webových aplikací je stále větší tlak na rychlost a nízkou spotřebu paměti. To jde ruku v ruce se stále více vychytanýma fíčurama. Předvedu, jak se to snažíme dělat u nás, kde pracujeme s daty v řádů desetitisíců až stotisíců entit v rámci jednoho view.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/X4WHABkjBZk/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 9,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "X4WHABkjBZk"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "iBQsDEKHfY-wqWhD-n8ClQ988_E",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4yODlGNEE0NkRGMEEzMEQy",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:40:44Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jindřich Máca - Novinky v TypeScriptu",
+                        "description": "Prozkoumejte se mnou novinky, které byly v jazyce TypeScript doposud představeny v tomto roce, poté se pojďme společně podívat, co nabídne nadcházející aktualizace 5.6, a také zjistit, co se ještě chystá a co by mohlo být vydáno do konce tohoto roku. To vše s konkrétními příklady i s vysvětlením, proč to pro nás jako vývojáře může být užitečné v praxi.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 10,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "yRDOwuyPGsc"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "yRDOwuyPGsc",
+                "title": "Jindřich Máca - Novinky v TypeScriptu",
+                "description": "Prozkoumejte se mnou novinky, které byly v jazyce TypeScript doposud představeny v tomto roce, poté se pojďme společně podívat, co nabídne nadcházející aktualizace 5.6, a také zjistit, co se ještě chystá a co by mohlo být vydáno do konce tohoto roku. To vše s konkrétními příklady i s vysvětlením, proč to pro nás jako vývojáře může být užitečné v praxi.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:40:44.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "iBQsDEKHfY-wqWhD-n8ClQ988_E",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi4yODlGNEE0NkRGMEEzMEQy",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:40:44Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Jindřich Máca - Novinky v TypeScriptu",
+                            "description": "Prozkoumejte se mnou novinky, které byly v jazyce TypeScript doposud představeny v tomto roce, poté se pojďme společně podívat, co nabídne nadcházející aktualizace 5.6, a také zjistit, co se ještě chystá a co by mohlo být vydáno do konce tohoto roku. To vše s konkrétními příklady i s vysvětlením, proč to pro nás jako vývojáře může být užitečné v praxi.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/yRDOwuyPGsc/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 10,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "yRDOwuyPGsc"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            },
+            {
+                "type": "video",
+                "raw": {
+                    "kind": "youtube#playlistItem",
+                    "etag": "Z0znCfO638RS5dL4TKerAeXZ2KA",
+                    "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41NkI0NEY2RDEwNTU3Q0M2",
+                    "snippet": {
+                        "publishedAt": "2024-11-05T10:40:09Z",
+                        "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                        "title": "Jakub Miskech - What I Learned in 1000+ Heads Start up",
+                        "description": "Ako vás pridanie ďalších procesov môže skutočne zrýchliť – znie to zvláštne, však? Podelím sa o to, čo som sa naučil pri práci, kde vyladenie nášho pracovného postupu pomocou tých správnych procesov prinieslo obrovský rozdiel. Porozprávame sa o jednoduchých spôsoboch, ako si lepšie zorganizovať prácu, urýchliť dodávanie projektov a urobiť váš každodenný inžiniersky život oveľa plynulejším.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            },
+                            "standard": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/sddefault.jpg",
+                                "width": 640,
+                                "height": 480
+                            },
+                            "maxres": {
+                                "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/maxresdefault.jpg",
+                                "width": 1280,
+                                "height": 720
+                            }
+                        },
+                        "channelTitle": "Frontendisti",
+                        "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                        "position": 11,
+                        "resourceId": {
+                            "kind": "youtube#video",
+                            "videoId": "XST2uRGgSPQ"
+                        },
+                        "videoOwnerChannelTitle": "Frontendisti",
+                        "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                    },
+                    "status": {
+                        "privacyStatus": "public"
+                    }
+                },
+                "full": false,
+                "kind": "youtube#playlistItem",
+                "id": "XST2uRGgSPQ",
+                "title": "Jakub Miskech - What I Learned in 1000+ Heads Start up",
+                "description": "Ako vás pridanie ďalších procesov môže skutočne zrýchliť – znie to zvláštne, však? Podelím sa o to, čo som sa naučil pri práci, kde vyladenie nášho pracovného postupu pomocou tých správnych procesov prinieslo obrovský rozdiel. Porozprávame sa o jednoduchých spôsoboch, ako si lepšie zorganizovať prácu, urýchliť dodávanie projektov a urobiť váš každodenný inžiniersky život oveľa plynulejším.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "publishedAt": "2024-11-05T10:40:09.000Z",
+                "channel": {
+                    "type": "channel",
+                    "raw": {
+                        "kind": "youtube#playlistItem",
+                        "etag": "Z0znCfO638RS5dL4TKerAeXZ2KA",
+                        "id": "UExuWGZhemg2NmtWZDBqWHBZbGlDTEFyZUhjNFREd25UZi41NkI0NEY2RDEwNTU3Q0M2",
+                        "snippet": {
+                            "publishedAt": "2024-11-05T10:40:09Z",
+                            "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                            "title": "Jakub Miskech - What I Learned in 1000+ Heads Start up",
+                            "description": "Ako vás pridanie ďalších procesov môže skutočne zrýchliť – znie to zvláštne, však? Podelím sa o to, čo som sa naučil pri práci, kde vyladenie nášho pracovného postupu pomocou tých správnych procesov prinieslo obrovský rozdiel. Porozprávame sa o jednoduchých spôsoboch, ako si lepšie zorganizovať prácu, urýchliť dodávanie projektov a urobiť váš každodenný inžiniersky život oveľa plynulejším.",
+                            "thumbnails": {
+                                "default": {
+                                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/default.jpg",
+                                    "width": 120,
+                                    "height": 90
+                                },
+                                "medium": {
+                                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/mqdefault.jpg",
+                                    "width": 320,
+                                    "height": 180
+                                },
+                                "high": {
+                                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/hqdefault.jpg",
+                                    "width": 480,
+                                    "height": 360
+                                },
+                                "standard": {
+                                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/sddefault.jpg",
+                                    "width": 640,
+                                    "height": 480
+                                },
+                                "maxres": {
+                                    "url": "https://i.ytimg.com/vi/XST2uRGgSPQ/maxresdefault.jpg",
+                                    "width": 1280,
+                                    "height": 720
+                                }
+                            },
+                            "channelTitle": "Frontendisti",
+                            "playlistId": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                            "position": 11,
+                            "resourceId": {
+                                "kind": "youtube#video",
+                                "videoId": "XST2uRGgSPQ"
+                            },
+                            "videoOwnerChannelTitle": "Frontendisti",
+                            "videoOwnerChannelId": "UCxs7KDC0LFOezVujLG_leRw"
+                        },
+                        "status": {
+                            "privacyStatus": "public"
+                        }
+                    },
+                    "full": false,
+                    "kind": "youtube#playlistItem",
+                    "id": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "Frontendisti"
+                }
+            }
+        ],
+        "raw": {
+            "kind": "youtube#playlist",
+            "etag": "KOCHAAp4Z02khYi8WWqhIUlWMjc",
+            "id": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+            "snippet": {
+                "publishedAt": "2024-11-05T10:40:01.502615Z",
+                "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                "title": "FrontKon 2024 - Stage P",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Frontendisti",
+                "localized": {
+                    "title": "FrontKon 2024 - Stage P",
+                    "description": ""
+                }
+            }
+        },
+        "channel": {
+            "type": "channel",
+            "raw": {
+                "kind": "youtube#playlist",
+                "etag": "KOCHAAp4Z02khYi8WWqhIUlWMjc",
+                "id": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+                "snippet": {
+                    "publishedAt": "2024-11-05T10:40:01.502615Z",
+                    "channelId": "UCxs7KDC0LFOezVujLG_leRw",
+                    "title": "FrontKon 2024 - Stage P",
+                    "description": "",
+                    "thumbnails": {
+                        "default": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                            "width": 120,
+                            "height": 90
+                        },
+                        "medium": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        "high": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        },
+                        "standard": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                            "width": 640,
+                            "height": 480
+                        },
+                        "maxres": {
+                            "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "channelTitle": "Frontendisti",
+                    "localized": {
+                        "title": "FrontKon 2024 - Stage P",
+                        "description": ""
+                    }
+                }
+            },
+            "full": false,
+            "kind": "youtube#playlist",
+            "id": "UCxs7KDC0LFOezVujLG_leRw",
+            "title": "Frontendisti"
+        },
+        "id": "PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf",
+        "title": "FrontKon 2024 - Stage P",
+        "description": "",
+        "publishedAt": "2024-11-05T10:40:01.502Z",
+        "thumbnails": {
+            "default": {
+                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/default.jpg",
+                "width": 120,
+                "height": 90
+            },
+            "medium": {
+                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/mqdefault.jpg",
+                "width": 320,
+                "height": 180
+            },
+            "high": {
+                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/hqdefault.jpg",
+                "width": 480,
+                "height": 360
+            },
+            "standard": {
+                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/sddefault.jpg",
+                "width": 640,
+                "height": 480
+            },
+            "maxres": {
+                "url": "https://i.ytimg.com/vi/k3zKfpA9CSw/maxresdefault.jpg",
+                "width": 1280,
+                "height": 720
+            }
+        },
+        "channelTitle": "Frontendisti",
+        "localized": {
+            "title": "FrontKon 2024 - Stage P",
+            "description": ""
+        }
+    }
+}

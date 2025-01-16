@@ -1,0 +1,13 @@
+.video-filter {
+
+}
+
+.video-filter__filter-button {
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background: none;
+}
+
+.video-filter__filter-button--active {
+    background: #ccc;
+}

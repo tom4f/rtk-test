@@ -1,0 +1,39 @@
+.video {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: stretch;
+  background: white;
+}
+
+.video__completed {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.video__completed:hover {
+  background: #ccc;
+}
+
+.video__completed-checkbox {
+}
+
+.video__content {
+  margin-left: 30px;
+}
+
+.video__title {
+  height: 48px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.video__description {
+  height: 114px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
