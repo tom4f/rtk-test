@@ -1,3 +1,1 @@
-import VideoFilter from './VideoFilterContainer'
-
-export default VideoFilter
+export * from './VideoFilterContainer';

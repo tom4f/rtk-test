@@ -1,14 +1,12 @@
-type Props = {};
-
-const AddCourseForm: React.FC<Props> = () => {
+const AddCourseForm = () => {
   return (
     <form>
       <h2>Add a new course</h2>
       <label>
         youtube playlist id:
-        <input type="text" />
+        <input type='text' />
       </label>
-      <button type="submit">Add course</button>
+      <button type='submit'>Add course</button>
     </form>
   );
 };

@@ -1,49 +1,39 @@
-import VideoFilter from './VideoFilter'
-import { connect } from 'react-redux'
-import { compose, withProps } from 'recompose'
-import { videoFilterSelector } from '../../selectors'
-import { setVideoFilter } from '../../actions'
+import React, { useMemo } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { videoFilterSelector } from '@/store/selectors';
+import { setVideoFilter } from '@/store/actions';
+import VideoFilter from './VideoFilter';
 
-const withFilterState = connect(
-  state => ({
-    videoFilter: videoFilterSelector(state),
-  }),
-  dispatch => ({
-    setVideoFilter: filterValue => {
-      dispatch(setVideoFilter(filterValue))
-    },
-  }),
-)
+const VideoFilterContainer = () => {
+  const dispatch = useDispatch();
+  const videoFilter = useSelector(videoFilterSelector);
 
-const withFilters = withProps(({ setVideoFilter, videoFilter }) => {
-  return {
-    filters: [
+  const setFilter = (filterValue: string) => {
+    dispatch(setVideoFilter({ filterValue }));
+  };
+
+  const filters = useMemo(
+    () => [
       {
-        onFilterSet: () => {
-          setVideoFilter({ filterValue: 'all' })
-        },
+        onFilterSet: () => setFilter('all'),
         name: 'All',
         active: videoFilter === 'all',
       },
       {
-        onFilterSet: () => {
-          setVideoFilter({ filterValue: 'completed' })
-        },
+        onFilterSet: () => setFilter('completed'),
         name: 'Completed',
         active: videoFilter === 'completed',
       },
       {
-        onFilterSet: () => {
-          setVideoFilter({ filterValue: 'not-completed' })
-        },
+        onFilterSet: () => setFilter('not-completed'),
         name: 'Not completed',
         active: videoFilter === 'not-completed',
       },
     ],
-  }
-})
+    [videoFilter]
+  );
 
-export default  compose(
-  withFilterState,
-  withFilters,
-)(VideoFilter)
+  return <VideoFilter filters={filters} />;
+};
+
+export default VideoFilterContainer;

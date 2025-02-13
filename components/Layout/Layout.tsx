@@ -1,14 +1,20 @@
-import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Container from "@/components/Container";
-import styles from "./Layout.module.scss";
+import React from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Container from '@/components/Container';
+import styles from './Layout.module.scss';
 
-const Layout = ({ children }) => {
+import { ReactNode } from 'react';
+
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      <div className={styles["layout__content"]}>
+      <div className={styles['layout__content']}>
         <Container>{children}</Container>
       </div>
       <Footer />
