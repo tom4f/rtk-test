@@ -1,11 +1,20 @@
-import CoursesListItem from "./CoursesListItem";
+'use client';
+import { useSelector } from 'react-redux';
+import CoursesListItem from './CoursesListItem';
+import { coursesSelector } from '@/store/selectors';
 
 const CoursesList: React.FC = () => {
+  const courses = useSelector(coursesSelector);
+
+  if (courses.length === 0) {
+    return <p>no courses added...</p>;
+  }
+
   return (
     <ul>
-      <CoursesListItem slug="java" />
-      <CoursesListItem slug="free-code-camp" />
-      <CoursesListItem slug="ten-days-of-javascript" />
+      {courses.map((slug) => (
+        <CoursesListItem key={slug} slug={slug} />
+      ))}
     </ul>
   );
 };

@@ -1,59 +1,68 @@
-import get from 'lodash/fp/get';
 import { createSelector } from 'reselect';
+import { RootState } from './store';
 
-const videoFilterSelector = get('coursePage.filterValue');
-const coursePageLoadingSelector = get('coursePage.loading');
-const coursePageErrorSelector = get('coursePage.error');
-const playlistVideosSelector = get('coursePage.playlist.playlistVideos');
-const playlistTitleSelector = get('coursePage.playlist.title');
+export const coursesSelector = createSelector(
+  (state: RootState) => state.coursePage,
+  (coursePage) => Object.keys(coursePage)
+);
 
-interface Video {
-  id: string;
-  completed: boolean;
-  open: boolean;
-}
+const courseDataSelector = createSelector(
+  (state: RootState, slug: string) => state.coursePage[slug],
+  (courseData) => courseData
+);
 
-interface CoursePageState {
-  filterValue: string;
-  loading: boolean;
-  error: string | null;
-  playlistVideos: Video[];
-  title: string;
-}
+const coursePageLoadingSelector = (state: RootState, slug: string) =>
+  state.coursePage[slug]?.loading || false;
 
-export interface State {
-  coursePage: CoursePageState;
-}
+const coursePageErrorSelector = (state: RootState, slug: string) =>
+  state.coursePage[slug]?.error || null;
+const playlistVideosSelector = (state: RootState, slug: string) =>
+  state.coursePage[slug]?.playlistVideos || [];
 
-const isCompletedSelector = (state: State, id: string): boolean => {
-  if (!state.coursePage.playlistVideos) return false;
-  const video = state.coursePage.playlistVideos.find((video: Video) => {
-    return video.id === id;
-  });
+const isCompletedSelector = (
+  state: RootState,
+  slug: string,
+  id: string
+): boolean => {
+  const video = state.coursePage[slug]?.playlistVideos.find(
+    (video) => video.id === id
+  );
   return video?.completed || false;
 };
 
-const isOpenSelector = (state: State, id: string): boolean => {
-  if (!state.coursePage.playlistVideos) return false;
-  const video = state.coursePage.playlistVideos.find((video: Video) => {
-    return video.id === id;
-  });
+const isOpenSelector = (
+  state: RootState,
+  slug: string,
+  id: string
+): boolean => {
+  const video = state.coursePage[slug]?.playlistVideos.find(
+    (video) => video.id === id
+  );
   return video?.open || false;
 };
 
-const getFilteredVideosSelector = createSelector(
-  [videoFilterSelector, playlistVideosSelector],
-  (filterValue, videos = []) => {
-    switch (filterValue) {
-      case 'completed':
-        return videos.filter((video: Video) => video.completed);
-      case 'not-completed':
-        return videos.filter((video: Video) => !video.completed);
-      default:
-        return videos;
+const videoFilterSelector = (state: RootState, slug: string) =>
+  state.coursePage[slug]?.filterValue;
+const playlistTitleSelector = (state: RootState, slug: string) =>
+  state.coursePage[slug]?.title || '';
+
+const getFilteredVideosSelector = (slug: string) =>
+  createSelector(
+    [
+      (state: RootState) => videoFilterSelector(state, slug),
+      (state: RootState) => playlistVideosSelector(state, slug),
+    ],
+    (filterValue, videos = []) => {
+      switch (filterValue) {
+        case 'completed':
+          return videos.filter((video) => video.completed);
+        case 'not-completed':
+          return videos.filter((video) => !video.completed);
+        default:
+          return videos;
+      }
     }
-  }
-);
+  );
 
 export {
   playlistVideosSelector,
@@ -64,4 +73,5 @@ export {
   coursePageLoadingSelector,
   coursePageErrorSelector,
   playlistTitleSelector,
+  courseDataSelector,
 };

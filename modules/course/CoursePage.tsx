@@ -5,43 +5,34 @@ import Spinner from '@/components/Spinner';
 import Container from '@/components/Container';
 import { VideoContainer } from './components/Video';
 import VideoFilterContainer from './components/VideoFilter/VideoFilterContainer';
-
-interface CoursePageProps {
-  title: string;
-  loading: boolean;
-  error: boolean;
-  playlistVideos: {
-    id: string;
-    title: string;
-    thumbnail: string;
-    description: string;
-    open: boolean;
-  }[];
-}
+import {
+  coursePageLoadingSelector,
+  coursePageErrorSelector,
+  courseDataSelector,
+  getFilteredVideosSelector,
+} from '@/store/selectors';
+import { useSelector } from 'react-redux';
+import { useParams } from 'next/navigation';
+import { RootState } from '@/store/store';
+import { SlugType } from '@/store/slice';
+import { VideoType } from '@/store/slice';
 
 interface RowProps {
   index: number;
   style: React.CSSProperties;
-  playlistVideos: {
-    id: string;
-    title: string;
-    thumbnail: string;
-    description: string;
-    open: boolean;
-  }[];
+  playlistVideos: VideoType[];
   toggleOpenCallback: (index: number) => void;
 }
 
 const Row: React.FC<RowProps> = React.memo(
   ({ index, style, playlistVideos, toggleOpenCallback }) => (
     <div style={style}>
-      CoursePage
       <VideoContainer
         key={playlistVideos[index].id}
         index={index}
         id={playlistVideos[index].id}
         title={playlistVideos[index].title}
-        thumbnail={playlistVideos[index].thumbnail}
+        thumbnail={playlistVideos[index].thumbnails.medium.url}
         description={playlistVideos[index].description}
         toggleOpenCallback={toggleOpenCallback}
       />
@@ -51,13 +42,21 @@ const Row: React.FC<RowProps> = React.memo(
 
 Row.displayName = 'Row';
 
-const CoursePage: React.FC<CoursePageProps> = ({
-  title,
-  loading,
-  error,
-  playlistVideos,
-}) => {
+const CoursePage = () => {
   const listRef = useRef<List>(null);
+  const params = useParams<{ slug: SlugType }>();
+  const { slug } = params;
+
+  const filteredVideos = useSelector(getFilteredVideosSelector(slug as string));
+
+  const playlistVideos = (filteredVideos || []).map((video: VideoType) => ({
+    id: video.id,
+    title: video.title,
+    thumbnails: { medium: { url: video.thumbnails?.medium?.url || '' } },
+    description: video.description,
+    open: video.open,
+    completed: video.completed,
+  }));
 
   const getItemSize = useCallback(
     (index: number): number =>
@@ -65,11 +64,24 @@ const CoursePage: React.FC<CoursePageProps> = ({
     [playlistVideos]
   );
 
+  const loading = useSelector((state: RootState) =>
+    coursePageLoadingSelector(state, slug)
+  );
+  const error = useSelector((state: RootState) =>
+    coursePageErrorSelector(state, slug)
+  );
+
   const toggleOpenCallback = useCallback((index: number) => {
     if (listRef.current) {
       listRef.current?.resetAfterIndex(index);
     }
   }, []);
+
+  const courseData = useSelector((state: RootState) =>
+    courseDataSelector(state, slug)
+  );
+
+  const { title } = courseData;
 
   return (
     <article>

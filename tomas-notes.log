@@ -1,0 +1,55 @@
+
+Orig redux
+
+left menu:
+PlaylistPage/FETCH_PLAYLIST_REQUEST
+PlaylistPage/SET_VIDEO_FILTER
+PlaylistPage/TOGGLE_VIDEO_COMPLETED
+PlaylistPage/TOGGLE_VIDEO_OPEN
+
+tree
+coursePage
+    loading
+    error
+    title
+    filteredValue
+    playlistVideos
+        0
+            completed
+            open
+            id
+            title
+            thumbnail
+            description
+        1
+
+action
+
+    type(pin):"PlaylistPage/TOGGLE_VIDEO_OPEN"
+    payload: {
+        id(pin):"dc-2t26Vuhs"
+    }
+
+    type(pin):"PlaylistPage/TOGGLE_VIDEO_COMPLETED"
+    payload: {
+        id(pin):"dc-2t26Vuhs"
+    }
+
+    type(pin):"PlaylistPage/SET_VIDEO_FILTER"
+    payload: {
+        ilterValue(pin):"all" / completed / not-completed
+    }
+
+    type(pin):"PlaylistPage/FETCH_PLAYLIST_REQUEST"
+    payload: {
+        playlistId(pin):"PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs"
+    }
+
+    type(pin):"PlaylistPage/FETCH_PLAYLIST_SUCCESS"
+    payload: {
+        title(pin):"The 10 Days of JavaScript"
+        playlistVideos: [videos]
+    }
+
+
+    app\course\[slug]\page.tsx

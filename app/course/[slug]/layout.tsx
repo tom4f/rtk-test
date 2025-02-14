@@ -1,4 +1,3 @@
-import { CoursesStoreProvider } from '@/store/storeProvider';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -11,5 +10,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <CoursesStoreProvider>{children}</CoursesStoreProvider>;
+  return <>{children}</>;
 }

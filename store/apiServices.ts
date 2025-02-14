@@ -6,12 +6,10 @@ const getPlaylist = async (playlistId: string) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    //mode: 'no-cors',
     body: JSON.stringify({ id: playlistId }),
   };
-  console.log(request);
   const response = await fetch(`${apiUrl}/playlist/index.php`, request);
-  console.log(response);
+  console.log('getPlaylist: ', response.status);
   return response;
 };
 
@@ -23,7 +21,7 @@ const getSlug = async (id: string) => {
     },
     body: JSON.stringify({ id }),
   };
-  const response = await fetch(`${apiUrl}/slug`, request);
+  const response = await fetch(`${apiUrl}/slug/index.php`, request);
   return response;
 };
 

@@ -1,9 +1,11 @@
 import React, { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { isCompletedSelector, isOpenSelector } from '@/store/selectors';
-import { toggleVideoCompleted, toggleVideoOpen } from '@/store/actions';
+import { toggleVideoOpen, toggleVideoCompleted } from '@/store/slice';
 import Video from './Video';
-import { State } from '@/store/selectors';
+import { RootState } from '@/store/store';
+import { useParams } from 'next/navigation';
+import { SlugType } from '@/store/slice';
 interface VideoContainerProps {
   id: string;
   toggleOpenCallback: (index: number) => void;
@@ -21,25 +23,29 @@ export const VideoContainer: React.FC<VideoContainerProps> = ({
   title,
 }) => {
   const dispatch = useDispatch();
+  const params = useParams<{ slug: SlugType }>();
+  const { slug } = params;
 
-  const isCompleted = useSelector((state: State) =>
-    isCompletedSelector(state, id)
+  const isCompleted = useSelector((state: RootState) =>
+    isCompletedSelector(state, slug, id)
   );
-  const isOpen = useSelector((state: State) => isOpenSelector(state, id));
+
+  const isOpen = useSelector((state: RootState) =>
+    isOpenSelector(state, slug, id)
+  );
 
   const toggleCompleted = useCallback(() => {
-    dispatch(toggleVideoCompleted({ id }));
+    dispatch(toggleVideoCompleted({ slug: slug, id }));
     toggleOpenCallback(index);
-  }, [dispatch, id, toggleOpenCallback, index]);
+  }, [dispatch, id, toggleOpenCallback, index, slug]);
 
   const toggleOpen = useCallback(() => {
-    dispatch(toggleVideoOpen({ id }));
+    dispatch(toggleVideoOpen({ slug: slug, id }));
     toggleOpenCallback(index);
-  }, [dispatch, id, toggleOpenCallback, index]);
+  }, [dispatch, id, toggleOpenCallback, index, slug]);
 
   return (
     <>
-      VideoContainer
       <Video
         id={id}
         isCompleted={isCompleted}

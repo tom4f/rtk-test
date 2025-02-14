@@ -1,16 +1,28 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { videoFilterSelector } from '@/store/selectors';
-import { setVideoFilter } from '@/store/actions';
+import { setVideoFilter } from '@/store/slice';
 import VideoFilter from './VideoFilter';
+import { PlaylistState } from '@/store/slice';
+import { useParams } from 'next/navigation';
+import { SlugType } from '@/store/slice';
+import { RootState } from '@/store/store';
 
 const VideoFilterContainer = () => {
   const dispatch = useDispatch();
-  const videoFilter = useSelector(videoFilterSelector);
+  const params = useParams<{ slug: SlugType }>();
+  const { slug } = params;
 
-  const setFilter = (filterValue: string) => {
-    dispatch(setVideoFilter({ filterValue }));
-  };
+  const setFilter = useCallback(
+    (filterValue: PlaylistState['filterValue']) => {
+      dispatch(setVideoFilter({ slug: slug, filterValue }));
+    },
+    [dispatch, slug]
+  );
+
+  const videoFilter = useSelector((state: RootState) =>
+    videoFilterSelector(state, slug)
+  );
 
   const filters = useMemo(
     () => [
@@ -30,7 +42,7 @@ const VideoFilterContainer = () => {
         active: videoFilter === 'not-completed',
       },
     ],
-    [videoFilter]
+    [videoFilter, setFilter]
   );
 
   return <VideoFilter filters={filters} />;

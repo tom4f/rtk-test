@@ -3,59 +3,34 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPlaylist } from '@/store/slice';
-import {
-  getFilteredVideosSelector,
-  coursePageLoadingSelector,
-  coursePageErrorSelector,
-  playlistTitleSelector,
-} from '@/store/selectors';
+import { courseDataSelector } from '@/store/selectors';
 import CoursePage from './CoursePage';
 import { AppDispatch } from '@/store/store';
-interface CoursePageContainerProps {
-  playlistId: string;
-}
+import { useParams } from 'next/navigation';
+import { SlugType } from '@/store/slice';
+import { RootState } from '@/store/store';
 
-export const CoursePageContainer = ({
-  playlistId,
-}: CoursePageContainerProps) => {
+export const CoursePageContainer = () => {
+  const params = useParams<{ slug: SlugType }>();
+  const { slug } = params;
+
   const dispatch = useDispatch<AppDispatch>();
 
-  const playlistVideos = (useSelector(getFilteredVideosSelector) || []).map(
-    (video: {
-      id: string;
-      title: string;
-      thumbnail: string;
-      description: string;
-      open: boolean;
-    }) => ({
-      id: video.id,
-      title: video.title,
-      thumbnail: video.thumbnail,
-      description: video.description,
-      open: video.open,
-    })
+  const courseData = useSelector((state: RootState) =>
+    courseDataSelector(state, slug)
   );
-  const loading = useSelector(coursePageLoadingSelector) as boolean;
-  const error = useSelector(coursePageErrorSelector) as boolean;
-  const title = useSelector(playlistTitleSelector) as string;
-
-  console.log('Playlist State:', playlistVideos);
 
   useEffect(() => {
-    if (!playlistId) {
-      throw new Error('Missing playlist id in props');
+    if (!courseData) {
+      dispatch(fetchPlaylist(slug));
     }
-    dispatch(fetchPlaylist(playlistId));
-  }, [dispatch, playlistId]);
+  }, [dispatch, courseData, slug]);
+
+  if (!courseData) return null;
 
   return (
     <>
-      <CoursePage
-        title={title}
-        loading={loading}
-        error={error}
-        playlistVideos={playlistVideos}
-      />
+      <CoursePage />
     </>
   );
 };
