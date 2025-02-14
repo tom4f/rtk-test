@@ -25,17 +25,15 @@ const AddCourseForm = () => {
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    if (availableCourses.includes(value as SlugType)) {
-      setPlaylistId(value as SlugType);
-    }
+    setPlaylistId(e.target.value as SlugType);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!playlistId) return;
-
-    dispatch(fetchPlaylist(playlistId));
+    if (availableCourses.includes(playlistId as SlugType)) {
+      dispatch(fetchPlaylist(playlistId));
+    }
     setPlaylistId('');
   };
 
