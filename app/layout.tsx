@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout/Layout';
+import { Layout } from '@/components/Layout/Layout';
 import type { Metadata } from 'next';
 import { CoursesStoreProvider } from '@/store/storeProvider';
 

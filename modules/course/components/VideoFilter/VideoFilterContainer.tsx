@@ -1,16 +1,14 @@
-import React, { useMemo, useCallback } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { videoFilterSelector } from '@/store/selectors';
-import { setVideoFilter } from '@/store/slice';
-import VideoFilter from './VideoFilter';
-import { PlaylistState } from '@/store/slice';
+import { useMemo, useCallback } from 'react';
+import { videoFilterSelector } from '@/store/courses';
+import { setVideoFilter } from '@/store/courses';
+import { VideoFilter } from './';
+import { PlaylistState } from '@/store/courses';
 import { useParams } from 'next/navigation';
-import { SlugType } from '@/store/slice';
-import { RootState } from '@/store/store';
+import { useAppSelector, useAppDispatch } from '@/store/hooks';
 
-const VideoFilterContainer = () => {
-  const dispatch = useDispatch();
-  const params = useParams<{ slug: SlugType }>();
+export const VideoFilterContainer = () => {
+  const dispatch = useAppDispatch();
+  const params = useParams<{ slug: string }>();
   const { slug } = params;
 
   const setFilter = useCallback(
@@ -20,7 +18,7 @@ const VideoFilterContainer = () => {
     [dispatch, slug]
   );
 
-  const videoFilter = useSelector((state: RootState) =>
+  const videoFilter = useAppSelector((state) =>
     videoFilterSelector(state, slug)
   );
 
@@ -47,5 +45,3 @@ const VideoFilterContainer = () => {
 
   return <VideoFilter filters={filters} />;
 };
-
-export default VideoFilterContainer;

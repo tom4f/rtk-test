@@ -9,7 +9,6 @@ const getPlaylist = async (playlistId: string) => {
     body: JSON.stringify({ id: playlistId }),
   };
   const response = await fetch(`${apiUrl}/playlist/index.php`, request);
-  console.log('getPlaylist: ', response.status);
   return response;
 };
 
@@ -25,4 +24,15 @@ const getSlug = async (id: string) => {
   return response;
 };
 
-export { getPlaylist, getSlug };
+const getAllPlaylists = async () => {
+  const response = await fetch(`${apiUrl}/slug/index.php`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  return response;
+};
+
+export { getPlaylist, getSlug, getAllPlaylists };

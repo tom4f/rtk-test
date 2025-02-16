@@ -1,7 +1,13 @@
-import React from 'react'
-import styles from './VideoFilter.module.scss'
+import React from 'react';
+import styles from './VideoFilter.module.scss';
 
-const VideoFilter = ({ filters }) => {
+type Filters = {
+  onFilterSet: () => void;
+  name: string;
+  active: boolean;
+}[];
+
+export const VideoFilter: React.FC<{ filters: Filters }> = ({ filters }) => {
   return (
     <div className={styles['video-filter']}>
       Filter:
@@ -11,16 +17,14 @@ const VideoFilter = ({ filters }) => {
             className={`${styles['video-filter__filter-button']} ${
               active ? styles['video-filter__filter-button--active'] : ''
             }`}
-            type="button"
+            type='button'
             onClick={onFilterSet}
             key={name}
           >
             {name}
           </button>
-        )
+        );
       })}
     </div>
-  )
-}
-
-export default VideoFilter
+  );
+};

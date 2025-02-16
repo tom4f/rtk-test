@@ -1,13 +1,13 @@
-import { useDispatch } from 'react-redux';
-import { removeCourse } from '@/store/slice';
+import { useAppDispatch } from '@/store/hooks';
+import { removeCourse } from '@/store/courses';
 import styles from './CoursesListItem.module.scss';
 
 type Props = {
   slug: string;
 };
 
-const CoursesListItem: React.FC<Props> = ({ slug }) => {
-  const dispatch = useDispatch();
+export const CoursesListItem = ({ slug }: Props) => {
+  const dispatch = useAppDispatch();
 
   return (
     <li className={styles['courses-list-item']}>
@@ -18,5 +18,3 @@ const CoursesListItem: React.FC<Props> = ({ slug }) => {
     </li>
   );
 };
-
-export default CoursesListItem;

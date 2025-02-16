@@ -1,85 +1,108 @@
-import React, { useRef, useCallback } from 'react';
+import React, { useRef, useCallback, useMemo, useEffect } from 'react';
 import { VariableSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import Spinner from '@/components/Spinner';
-import Container from '@/components/Container';
+import { Spinner } from '@/components/Spinner';
+import { Container } from '@/components/Container';
 import { VideoContainer } from './components/Video';
-import VideoFilterContainer from './components/VideoFilter/VideoFilterContainer';
+import { VideoFilterContainer } from './components/VideoFilter';
 import {
   coursePageLoadingSelector,
   coursePageErrorSelector,
   courseDataSelector,
   getFilteredVideosSelector,
-} from '@/store/selectors';
-import { useSelector } from 'react-redux';
+  isOpenMapSelector,
+} from '@/store/courses';
 import { useParams } from 'next/navigation';
-import { RootState } from '@/store/store';
-import { SlugType } from '@/store/slice';
-import { VideoType } from '@/store/slice';
+import { VideoType } from '@/store/courses';
+import { useAppSelector } from '@/store/hooks';
 
-interface RowProps {
+type RowProps = {
   index: number;
   style: React.CSSProperties;
   playlistVideos: VideoType[];
-  toggleOpenCallback: (index: number) => void;
-}
+};
 
 const Row: React.FC<RowProps> = React.memo(
-  ({ index, style, playlistVideos, toggleOpenCallback }) => (
-    <div style={style}>
-      <VideoContainer
-        key={playlistVideos[index].id}
-        index={index}
-        id={playlistVideos[index].id}
-        title={playlistVideos[index].title}
-        thumbnail={playlistVideos[index].thumbnails.medium.url}
-        description={playlistVideos[index].description}
-        toggleOpenCallback={toggleOpenCallback}
-      />
-    </div>
-  )
+  ({ index, style, playlistVideos }) => {
+    const { id, title, thumbnails, description } = playlistVideos[index];
+
+    return (
+      <div style={style}>
+        <VideoContainer
+          key={id}
+          index={index}
+          id={id}
+          title={title}
+          thumbnail={thumbnails.medium.url}
+          description={description}
+        />
+      </div>
+    );
+  }
 );
 
 Row.displayName = 'Row';
 
-const CoursePage = () => {
-  const listRef = useRef<List>(null);
-  const params = useParams<{ slug: SlugType }>();
+export const CoursePage = () => {
+  const params = useParams<{ slug: string }>();
   const { slug } = params;
 
-  const filteredVideos = useSelector(getFilteredVideosSelector(slug as string));
+  const filteredVideos = useAppSelector(getFilteredVideosSelector(slug));
 
-  const playlistVideos = (filteredVideos || []).map((video: VideoType) => ({
-    id: video.id,
-    title: video.title,
-    thumbnails: { medium: { url: video.thumbnails?.medium?.url || '' } },
-    description: video.description,
-    open: video.open,
-    completed: video.completed,
-  }));
+  const listRef = useRef<List>(null);
+  const isOpenMap = useAppSelector((state) => isOpenMapSelector(state, slug));
+  const previousIsOpenMapRef = useRef(isOpenMap);
+
+  useEffect(() => {
+    if (listRef.current) {
+      const firstChangedIndex = Object.keys(isOpenMap).findIndex(
+        (id) => isOpenMap[id]
+      );
+      if (firstChangedIndex !== -1) {
+        listRef.current.resetAfterIndex(firstChangedIndex, false);
+      }
+    }
+  }, [isOpenMap]);
+
+  const playlistVideos = useMemo(
+    () =>
+      (filteredVideos || []).map((video: VideoType) => ({
+        id: video.id,
+        title: video.title,
+        thumbnails: { medium: { url: video.thumbnails?.medium?.url || '' } },
+        description: video.description,
+        open: video.open,
+        completed: video.completed,
+      })),
+    [filteredVideos]
+  );
 
   const getItemSize = useCallback(
     (index: number): number =>
-      playlistVideos[index].open === true ? 540 : 140,
-    [playlistVideos]
+      isOpenMap[playlistVideos[index].id] ? 540 : 140,
+    [isOpenMap, playlistVideos]
   );
 
-  const loading = useSelector((state: RootState) =>
+  useEffect(() => {
+    if (listRef.current) {
+      const changedIndex = Object.keys(isOpenMap).findIndex(
+        (id) => isOpenMap[id] !== previousIsOpenMapRef.current?.[id]
+      );
+
+      if (changedIndex !== -1) {
+        listRef.current.resetAfterIndex(changedIndex, true);
+      }
+    }
+
+    previousIsOpenMapRef.current = isOpenMap;
+  }, [isOpenMap]);
+
+  const loading = useAppSelector((state) =>
     coursePageLoadingSelector(state, slug)
   );
-  const error = useSelector((state: RootState) =>
-    coursePageErrorSelector(state, slug)
-  );
+  const error = useAppSelector((state) => coursePageErrorSelector(state, slug));
 
-  const toggleOpenCallback = useCallback((index: number) => {
-    if (listRef.current) {
-      listRef.current?.resetAfterIndex(index);
-    }
-  }, []);
-
-  const courseData = useSelector((state: RootState) =>
-    courseDataSelector(state, slug)
-  );
+  const courseData = useAppSelector((state) => courseDataSelector(state, slug));
 
   const { title } = courseData;
 
@@ -104,7 +127,6 @@ const CoursePage = () => {
                       index={index}
                       style={style}
                       playlistVideos={playlistVideos}
-                      toggleOpenCallback={toggleOpenCallback}
                     />
                   )}
                 </List>
@@ -118,5 +140,3 @@ const CoursePage = () => {
     </article>
   );
 };
-
-export default CoursePage;

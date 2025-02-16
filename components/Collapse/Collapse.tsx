@@ -1,18 +1,15 @@
-import * as React from 'react';
-import c from 'classnames';
-
+import classNames from 'classnames';
 import styles from './Collapse.module.scss';
 
-interface CollapseProps {
+type CollapseProps = {
   open: boolean;
   children: React.ReactNode;
-}
+};
 
-const Collapse: React.FC<CollapseProps> = ({ open, children }) => {
+export const Collapse: React.FC<CollapseProps> = ({ open, children }) => {
   return (
     <div
-      className={c({
-        [styles['collapse']]: true,
+      className={classNames(styles.collapse, {
         [styles['collapse--open']]: open,
       })}
       style={{ maxHeight: open ? '1000000px' : '0px' }}
@@ -21,5 +18,3 @@ const Collapse: React.FC<CollapseProps> = ({ open, children }) => {
     </div>
   );
 };
-
-export default React.memo(Collapse);

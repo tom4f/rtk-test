@@ -2,11 +2,11 @@
 
 import { useSelector } from 'react-redux';
 import Link from 'next/link';
-import Container from '@/components/Container';
+import { Container } from '@/components/Container';
 import styles from './Header.module.scss';
-import { coursesSelector } from '@/store/selectors';
+import { coursesSelector } from '@/store/courses';
 
-const Header = () => {
+export const Header = () => {
   const courses = useSelector(coursesSelector);
 
   return (
@@ -29,5 +29,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

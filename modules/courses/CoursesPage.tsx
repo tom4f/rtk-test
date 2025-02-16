@@ -1,5 +1,5 @@
-import AddCourseForm from './components/AddCourseForm/AddCourseForm';
-import CoursesList from './components/CoursesList/CoursesList';
+import { AddCourseForm } from './components/AddCourseForm/AddCourseForm';
+import { CoursesList } from './components/CoursesList/CoursesList';
 
 export const CoursesPage = () => (
   <div>

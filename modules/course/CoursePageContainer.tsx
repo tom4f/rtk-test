@@ -1,36 +1,25 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchPlaylist } from '@/store/slice';
-import { courseDataSelector } from '@/store/selectors';
-import CoursePage from './CoursePage';
-import { AppDispatch } from '@/store/store';
+import { fetchPlaylist } from '@/store/courses';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import { CoursePage } from './CoursePage';
 import { useParams } from 'next/navigation';
-import { SlugType } from '@/store/slice';
-import { RootState } from '@/store/store';
 
 export const CoursePageContainer = () => {
-  const params = useParams<{ slug: SlugType }>();
-  const { slug } = params;
-
-  const dispatch = useDispatch<AppDispatch>();
-
-  const courseData = useSelector((state: RootState) =>
-    courseDataSelector(state, slug)
+  const { slug } = useParams() as { slug?: string };
+  const dispatch = useAppDispatch();
+  const courseData = useAppSelector((state) =>
+    slug ? state.coursePage[slug] : undefined
   );
 
   useEffect(() => {
-    if (!courseData) {
+    if (slug && !courseData) {
       dispatch(fetchPlaylist(slug));
     }
   }, [dispatch, courseData, slug]);
 
-  if (!courseData) return null;
+  if (!slug || !courseData) return <>Something wrong...</>;
 
-  return (
-    <>
-      <CoursePage />
-    </>
-  );
+  return <CoursePage />;
 };

@@ -1,21 +1,31 @@
 import { createSelector } from 'reselect';
-import { RootState } from './store';
+import { RootState } from '../store';
+
+export const isOpenMapSelector = createSelector(
+  [
+    (state: RootState, slug: string) =>
+      state.coursePage[slug]?.playlistVideos || [],
+  ],
+  (videos) =>
+    videos.reduce((acc, video) => {
+      acc[video.id] = video.open;
+      return acc;
+    }, {} as Record<string, boolean>)
+);
 
 export const coursesSelector = createSelector(
   (state: RootState) => state.coursePage,
   (coursePage) => Object.keys(coursePage)
 );
 
-const courseDataSelector = createSelector(
-  (state: RootState, slug: string) => state.coursePage[slug],
-  (courseData) => courseData
-);
+const courseDataSelector = (state: RootState, slug: string) =>
+  state.coursePage[slug];
 
 const coursePageLoadingSelector = (state: RootState, slug: string) =>
   state.coursePage[slug]?.loading || false;
-
 const coursePageErrorSelector = (state: RootState, slug: string) =>
   state.coursePage[slug]?.error || null;
+
 const playlistVideosSelector = (state: RootState, slug: string) =>
   state.coursePage[slug]?.playlistVideos || [];
 

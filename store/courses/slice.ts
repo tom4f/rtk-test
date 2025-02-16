@@ -1,18 +1,8 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { getPlaylist } from './apiServices';
+import { getPlaylist } from '../apiServices';
+import { RootState } from '../store';
 
-export const playlistIds = {
-  java: 'PLYPjPMiw3_YsVockWfuuhoP86YPDUXp4f',
-  'free-code-camp': 'UU8butISFwT-Wl7EV0hUK0BQ',
-  'ten-days-of-javascript': 'PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs',
-  'fk-2024-e': 'PLnXfazh66kVfUsfw9Oh5rBttZHaJe6HKB',
-  'fk-2024-p': 'PLnXfazh66kVd0jXpYliCLAreHc4TDwnTf',
-  'fk-2024-f': 'PLnXfazh66kVc8TRx1qmK3wshWs330_xsK',
-};
-
-export type SlugType = keyof typeof playlistIds;
-
-export interface VideoType {
+export type VideoType = {
   id: string;
   completed: boolean;
   open: boolean;
@@ -23,22 +13,28 @@ export interface VideoType {
     };
   };
   description: string;
-}
+};
 
-export interface PlaylistState {
+export type PlaylistState = {
   title: string;
   playlistVideos: VideoType[];
   loading: boolean;
   error: string | null;
   filterValue: 'all' | 'completed' | 'not-completed';
-}
+};
 
 const initialState: { [key: string]: PlaylistState } = {};
 
 export const fetchPlaylist = createAsyncThunk(
   'PlaylistPage/fetchPlaylist',
-  async (slug: SlugType) => {
-    const response = await getPlaylist(playlistIds[slug]);
+  async (slug: string, { getState, rejectWithValue }) => {
+    const state = getState() as RootState;
+    const playlistId = state.playlist.playlistIds[slug];
+    if (!playlistId) return rejectWithValue('Playlist ID not found');
+
+    const response = await getPlaylist(playlistId);
+    if (!response.ok) return rejectWithValue('Failed to fetch playlist');
+
     const { playlist, playlistVideos } = await response.json();
     return {
       slug,
@@ -55,7 +51,7 @@ export const fetchPlaylist = createAsyncThunk(
   }
 );
 
-const playlistSlice = createSlice({
+const coursesSlice = createSlice({
   name: 'playlist',
   initialState,
   reducers: {
@@ -96,6 +92,17 @@ const playlistSlice = createSlice({
         state[slug].filterValue = filterValue;
       }
     },
+    markVideoCompleted: (state, action: PayloadAction<string>) => {
+      for (const course of Object.values(state)) {
+        const video = course.playlistVideos.find(
+          (v) => v.id === action.payload
+        );
+        if (video) {
+          video.completed = true;
+          break;
+        }
+      }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -127,7 +134,7 @@ const playlistSlice = createSlice({
         const slug = action.meta.arg;
         if (state[slug]) {
           state[slug].loading = false;
-          state[slug].error = action.error.message || 'Error fetching playlist';
+          state[slug].error = action.payload as string;
         }
       });
   },
@@ -138,6 +145,7 @@ export const {
   toggleVideoOpen,
   setVideoFilter,
   removeCourse,
-} = playlistSlice.actions;
+  markVideoCompleted,
+} = coursesSlice.actions;
 
-export default playlistSlice.reducer;
+export const coursesReducer = coursesSlice.reducer;

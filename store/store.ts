@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import playlistsReducer from './slice';
+import { coursesReducer } from './courses';
+import { playlistReducer } from './playlist/playlistSlice';
 
 export const makeStore = () => {
   const store = configureStore({
     reducer: {
-      coursePage: playlistsReducer,
+      coursePage: coursesReducer,
+      playlist: playlistReducer,
     },
   });
   return store;

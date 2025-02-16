@@ -1,20 +1,34 @@
 'use client';
-import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchPlaylist } from '@/store/slice';
-import { coursesSelector } from '@/store/selectors';
+
+import { useState, useEffect } from 'react';
+import { useAppDispatch } from '@/store/hooks';
+import { fetchPlaylist } from '@/store/courses';
+import { coursesSelector } from '@/store/courses';
 import styles from './../CoursesList/CoursesListItem.module.scss';
-import { SlugType } from '@/store/slice';
-import { AppDispatch } from '@/store/store';
-import { playlistIds } from '@/store/slice';
+import { fetchAllPlaylists } from '@/store/playlist';
+import { useAppSelector } from '@/store/hooks';
 
-const availableCourses = Object.keys(playlistIds) as SlugType[];
+export const AddCourseForm = () => {
+  const dispatch = useAppDispatch();
 
-const AddCourseForm = () => {
-  const [playlistId, setPlaylistId] = useState<SlugType | ''>('');
-  const dispatch = useDispatch<AppDispatch>();
+  const { playlistIds, loading, error } = useAppSelector(
+    (state) => state.playlist
+  );
 
-  const courses = useSelector(coursesSelector);
+  useEffect(() => {
+    if (!playlistIds.length) {
+      dispatch(fetchAllPlaylists());
+    }
+  }, [dispatch, playlistIds.length]);
+
+  const availableCourses = Object.keys(playlistIds) as string[];
+
+  const [playlistId, setPlaylistId] = useState('');
+
+  const courses = useAppSelector(coursesSelector);
+
+  if (loading) return <p>Loading playlists...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   const notAddedCourses = availableCourses.filter(
     (slug) => !courses.includes(slug)
@@ -25,13 +39,13 @@ const AddCourseForm = () => {
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPlaylistId(e.target.value as SlugType);
+    setPlaylistId(e.target.value);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!playlistId) return;
-    if (availableCourses.includes(playlistId as SlugType)) {
+    if (availableCourses.includes(playlistId)) {
       dispatch(fetchPlaylist(playlistId));
     }
     setPlaylistId('');
@@ -59,5 +73,3 @@ const AddCourseForm = () => {
     </>
   );
 };
-
-export default AddCourseForm;

@@ -1,10 +1,10 @@
 'use client';
-import { useSelector } from 'react-redux';
-import CoursesListItem from './CoursesListItem';
-import { coursesSelector } from '@/store/selectors';
+import { useAppSelector } from '@/store/hooks';
+import { CoursesListItem } from './CoursesListItem';
+import { coursesSelector } from '@/store/courses';
 
-const CoursesList: React.FC = () => {
-  const courses = useSelector(coursesSelector);
+export const CoursesList = () => {
+  const courses = useAppSelector(coursesSelector);
 
   if (courses.length === 0) {
     return <p>no courses added...</p>;
@@ -18,5 +18,3 @@ const CoursesList: React.FC = () => {
     </ul>
   );
 };
-
-export default CoursesList;
