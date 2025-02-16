@@ -1,9 +1,8 @@
-import React, { useRef, useCallback, useMemo, useEffect } from 'react';
+import React, { useRef, useCallback, useEffect } from 'react';
 import { VariableSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { Spinner } from '@/components/Spinner';
 import { Container } from '@/components/Container';
-import { VideoContainer } from './components/Video';
 import { VideoFilterContainer } from './components/VideoFilter';
 import {
   coursePageLoadingSelector,
@@ -13,33 +12,21 @@ import {
   isOpenMapSelector,
 } from '@/store/courses';
 import { useParams } from 'next/navigation';
-import { VideoType } from '@/store/courses';
 import { useAppSelector } from '@/store/hooks';
+import { Video } from './components/Video';
 
 type RowProps = {
-  index: number;
   style: React.CSSProperties;
-  playlistVideos: VideoType[];
+  id: string;
 };
 
-const Row: React.FC<RowProps> = React.memo(
-  ({ index, style, playlistVideos }) => {
-    const { id, title, thumbnails, description } = playlistVideos[index];
-
-    return (
-      <div style={style}>
-        <VideoContainer
-          key={id}
-          index={index}
-          id={id}
-          title={title}
-          thumbnail={thumbnails.medium.url}
-          description={description}
-        />
-      </div>
-    );
-  }
-);
+const Row: React.FC<RowProps> = React.memo(({ style, id }) => {
+  return (
+    <div style={style}>
+      <Video id={id} />
+    </div>
+  );
+});
 
 Row.displayName = 'Row';
 
@@ -48,40 +35,9 @@ export const CoursePage = () => {
   const { slug } = params;
 
   const filteredVideos = useAppSelector(getFilteredVideosSelector(slug));
-
   const listRef = useRef<List>(null);
   const isOpenMap = useAppSelector((state) => isOpenMapSelector(state, slug));
   const previousIsOpenMapRef = useRef(isOpenMap);
-
-  useEffect(() => {
-    if (listRef.current) {
-      const firstChangedIndex = Object.keys(isOpenMap).findIndex(
-        (id) => isOpenMap[id]
-      );
-      if (firstChangedIndex !== -1) {
-        listRef.current.resetAfterIndex(firstChangedIndex, false);
-      }
-    }
-  }, [isOpenMap]);
-
-  const playlistVideos = useMemo(
-    () =>
-      (filteredVideos || []).map((video: VideoType) => ({
-        id: video.id,
-        title: video.title,
-        thumbnails: { medium: { url: video.thumbnails?.medium?.url || '' } },
-        description: video.description,
-        open: video.open,
-        completed: video.completed,
-      })),
-    [filteredVideos]
-  );
-
-  const getItemSize = useCallback(
-    (index: number): number =>
-      isOpenMap[playlistVideos[index].id] ? 540 : 140,
-    [isOpenMap, playlistVideos]
-  );
 
   useEffect(() => {
     if (listRef.current) {
@@ -97,36 +53,40 @@ export const CoursePage = () => {
     previousIsOpenMapRef.current = isOpenMap;
   }, [isOpenMap]);
 
+  const videoIds = filteredVideos.map((video) => video.id);
+
+  const getItemSize = useCallback(
+    (index: number): number => (isOpenMap[videoIds[index]] ? 540 : 140),
+    [isOpenMap, videoIds]
+  );
+
   const loading = useAppSelector((state) =>
     coursePageLoadingSelector(state, slug)
   );
   const error = useAppSelector((state) => coursePageErrorSelector(state, slug));
-
   const courseData = useAppSelector((state) => courseDataSelector(state, slug));
-
-  const { title } = courseData;
 
   return (
     <article>
       <Container>
         <VideoFilterContainer />
-        <h1>{title}</h1>
-        {!loading && playlistVideos.length > 0 && (
+        <h1>{courseData.title}</h1>
+        {!loading && videoIds.length > 0 && (
           <div style={{ height: '60vh' }}>
             <AutoSizer>
               {({ height, width }) => (
                 <List
                   ref={listRef}
                   height={height}
-                  itemCount={playlistVideos.length}
+                  itemCount={videoIds.length}
                   itemSize={getItemSize}
                   width={width}
                 >
                   {({ index, style }) => (
                     <Row
-                      index={index}
+                      key={videoIds[index]}
+                      id={videoIds[index]}
                       style={style}
-                      playlistVideos={playlistVideos}
                     />
                   )}
                 </List>

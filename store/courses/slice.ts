@@ -8,7 +8,7 @@ export type VideoType = {
   open: boolean;
   title: string;
   thumbnails: {
-    medium: {
+    default: {
       url: string;
     };
   };
@@ -42,8 +42,8 @@ export const fetchPlaylist = createAsyncThunk(
       playlistVideos: playlistVideos.map((video: VideoType) => ({
         id: video.id,
         title: video.title,
-        thumbnail: video.thumbnails.medium.url,
         description: video.description,
+        thumbnails: { default: { url: video.thumbnails.default.url } },
         completed: false,
         open: false,
       })),
