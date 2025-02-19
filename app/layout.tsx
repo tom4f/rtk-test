@@ -7,15 +7,24 @@ export const metadata: Metadata = {
   description: 'Simple interview app for SiteOne',
 };
 
-export default function RootLayout({
+const API_URL =
+  process.env.NODE_ENV === 'production'
+    ? 'https://www.frymburk.com/api-siteone/slug/index.php'
+    : 'http://localhost:3000/api/slug/index.php';
+
+export default async function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const response = await fetch(API_URL, { next: { revalidate: 10 } });
+  const courses = await response.json();
+  console.log(response.url);
+
   return (
     <html>
       <body>
-        <CoursesStoreProvider>
+        <CoursesStoreProvider initialCourses={courses}>
           <Layout>{children}</Layout>
         </CoursesStoreProvider>
       </body>

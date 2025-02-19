@@ -53,3 +53,15 @@ action
 
 
     app\course\[slug]\page.tsx
+
+
+
+      const host = (await headers()).get('host');
+  const isLocalhost = host?.includes('localhost');
+  const protocol =
+    process.env.NODE_ENV === 'development' || isLocalhost ? 'http' : 'https';
+  const API_URL = `${protocol}://${host}/api/slug/index.php`;
+  console.log(API_URL);
+  const response = await fetch(API_URL, { next: { revalidate: 10 } });
+
+  const courses = await response.json();

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { getPlaylist } from '../apiServices';
-import { RootState } from '../store';
+import { RootState, AppDispatch } from '../store';
 
 export type VideoType = {
   id: string;
@@ -23,33 +23,47 @@ export type PlaylistState = {
   filterValue: 'all' | 'completed' | 'not-completed';
 };
 
+type FetchPlaylistResponse = {
+  slug: string;
+  title: string;
+  playlistVideos: VideoType[];
+};
+
+type AsyncThunkConfig = {
+  state: RootState;
+  dispatch: AppDispatch;
+  rejectValue: string;
+};
+
 const initialState: { [key: string]: PlaylistState } = {};
 
-export const fetchPlaylist = createAsyncThunk(
-  'PlaylistPage/fetchPlaylist',
-  async (slug: string, { getState, rejectWithValue }) => {
-    const state = getState() as RootState;
-    const playlistId = state.playlist.playlistIds[slug];
-    if (!playlistId) return rejectWithValue('Playlist ID not found');
+// createAsyncThunk<ReturnedType, ArgumentType, ThunkAPIType>
+export const fetchPlaylist = createAsyncThunk<
+  FetchPlaylistResponse,
+  string,
+  AsyncThunkConfig
+>('PlaylistPage/fetchPlaylist', async (slug, { getState, rejectWithValue }) => {
+  const state = getState() as RootState;
+  const playlistId = state.playlist.playlistIds[slug];
+  if (!playlistId) return rejectWithValue('Playlist ID not found');
 
-    const response = await getPlaylist(playlistId);
-    if (!response.ok) return rejectWithValue('Failed to fetch playlist');
+  const response = await getPlaylist(playlistId);
+  if (!response.ok) return rejectWithValue('Failed to fetch playlist');
 
-    const { playlist, playlistVideos } = await response.json();
-    return {
-      slug,
-      title: playlist.localized.title,
-      playlistVideos: playlistVideos.map((video: VideoType) => ({
-        id: video.id,
-        title: video.title,
-        description: video.description,
-        thumbnails: { default: { url: video.thumbnails.default.url } },
-        completed: false,
-        open: false,
-      })),
-    };
-  }
-);
+  const { playlist, playlistVideos } = await response.json();
+  return {
+    slug,
+    title: playlist.localized.title,
+    playlistVideos: playlistVideos.map((video: VideoType) => ({
+      id: video.id,
+      title: video.title,
+      description: video.description,
+      thumbnails: { default: { url: video.thumbnails.default.url } },
+      completed: false,
+      open: false,
+    })),
+  };
+});
 
 const coursesSlice = createSlice({
   name: 'playlist',

@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { getAllPlaylists } from '../apiServices';
 
 type PlaylistState = {
@@ -36,7 +36,11 @@ export const fetchAllPlaylists = createAsyncThunk(
 const playlistSlice = createSlice({
   name: 'playlist',
   initialState,
-  reducers: {},
+  reducers: {
+    setCourses: (state, action: PayloadAction<Record<string, string>>) => {
+      state.playlistIds = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchAllPlaylists.pending, (state) => {
@@ -54,4 +58,5 @@ const playlistSlice = createSlice({
   },
 });
 
+export const { setCourses } = playlistSlice.actions;
 export const playlistReducer = playlistSlice.reducer;

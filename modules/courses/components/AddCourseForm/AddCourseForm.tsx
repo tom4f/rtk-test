@@ -1,25 +1,36 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useAppDispatch } from '@/store/hooks';
 import { fetchPlaylist } from '@/store/courses';
 import { coursesSelector } from '@/store/courses';
 import styles from './../CoursesList/CoursesListItem.module.scss';
-import { fetchAllPlaylists } from '@/store/playlist';
+//import { fetchAllPlaylists } from '@/store/playlist';
+import { useGetAllPlaylistsQuery } from '@/store/apiServices';
 import { useAppSelector } from '@/store/hooks';
 
 export const AddCourseForm = () => {
+  // Use the RTK Query hook to fetch playlists
+  const {
+    data,
+    error: RTKQueryError,
+    isLoading: RTKQueryIsLoading,
+  } = useGetAllPlaylistsQuery();
+
+  const availableCoursesRTKQuery = Object.keys(data || {}) as string[];
+  console.log({ RTKQueryIsLoading }, { RTKQueryError }, data);
+
   const dispatch = useAppDispatch();
 
   const { playlistIds, loading, error } = useAppSelector(
     (state) => state.playlist
   );
 
-  useEffect(() => {
+  /*   useEffect(() => {
     if (!playlistIds.length) {
       dispatch(fetchAllPlaylists());
     }
-  }, [dispatch, playlistIds.length]);
+  }, [dispatch, playlistIds.length]); */
 
   const availableCourses = Object.keys(playlistIds) as string[];
 
@@ -64,6 +75,16 @@ export const AddCourseForm = () => {
       <h2>Our offer</h2>
       <ul>
         {notAddedCourses.map((slug) => (
+          <li key={slug} className={styles['courses-list-item']}>
+            {slug}
+            <button onClick={() => dispatch(fetchPlaylist(slug))}>Add</button>
+          </li>
+        ))}
+      </ul>
+      <h2>Our offer RTK Query test</h2>
+      -- {RTKQueryIsLoading} --
+      <ul>
+        {availableCoursesRTKQuery.map((slug) => (
           <li key={slug} className={styles['courses-list-item']}>
             {slug}
             <button onClick={() => dispatch(fetchPlaylist(slug))}>Add</button>

@@ -1,16 +1,19 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { coursesReducer } from './courses';
-import { playlistReducer } from './playlist/playlistSlice';
+import { playlistReducer } from './playlist';
+import { playlistApi } from './apiServices';
 
-export const makeStore = () => {
-  const store = configureStore({
+export const makeStore = () =>
+  configureStore({
     reducer: {
       coursePage: coursesReducer,
       playlist: playlistReducer,
+      [playlistApi.reducerPath]: playlistApi.reducer, // Add the RTK Query reducer
     },
+    // Adding middleware to handle RTK Query's caching and networking
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().concat(playlistApi.middleware),
   });
-  return store;
-};
 
 export type AppStore = ReturnType<typeof makeStore>;
 export type RootState = ReturnType<AppStore['getState']>;
