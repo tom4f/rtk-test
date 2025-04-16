@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Course',
-  description: 'Simple interview app for SiteOne',
+  title: 'Courses',
+  description: 'Wing Foiling Courses',
 };
 
 export default function RootLayout({

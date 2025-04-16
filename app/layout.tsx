@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { CoursesStoreProvider } from '@/store/storeProvider';
 
 export const metadata: Metadata = {
-  title: 'SiteOne interview app',
-  description: 'Simple interview app for SiteOne',
+  title: 'Wing Foil app',
+  description: 'Wing Foil Youtube Playlist',
 };
 
 const API_URL =

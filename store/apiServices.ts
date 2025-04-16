@@ -42,17 +42,35 @@ const getAllPlaylists = async () => {
 
 export { getPlaylist, getSlug, getAllPlaylists };
 
-// Define the API slice
 export const playlistApi = createApi({
-  reducerPath: 'playlistApi', // A unique name for the slice
-  baseQuery: fetchBaseQuery({ baseUrl: apiUrl }), // Define base URL for your API
+  reducerPath: 'playlistApi',
+  baseQuery: fetchBaseQuery({ baseUrl: apiUrl }),
   endpoints: (builder) => ({
-    // Define the "getAllPlaylists" endpoint
-    getAllPlaylists: builder.query<any, void>({
-      query: () => 'slug/index.php', // The API endpoint for fetching playlists
+    getAllPlaylists: builder.query<
+      { playlists: Array<{ id: number; name: string }> },
+      void
+    >({
+      query: () => 'slug/index.php',
     }),
-    // Add other API endpoints here as needed
   }),
 });
 
-export const { useGetAllPlaylistsQuery } = playlistApi; // Hook for using the query
+export const removeVideoApi = createApi({
+  reducerPath: 'removeVideoApi',
+  baseQuery: fetchBaseQuery({ baseUrl: apiUrl }),
+  endpoints: (builder) => ({
+    deleteVideo: builder.mutation<
+      void,
+      { playlistId: number; videoId: string }
+    >({
+      query: ({ playlistId, videoId }) => ({
+        url: `playlist/delete-video.php`,
+        method: 'POST',
+        body: { playlistId, videoId },
+      }),
+    }),
+  }),
+});
+
+export const { useGetAllPlaylistsQuery } = playlistApi;
+export const { useDeleteVideoMutation } = removeVideoApi;

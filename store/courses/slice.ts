@@ -1,6 +1,7 @@
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { getPlaylist } from '../apiServices';
 import { RootState, AppDispatch } from '../store';
+import { reducers } from './reducers';
 
 export type VideoJsonType = {
   id: string;
@@ -92,76 +93,7 @@ export const fetchPlaylist = createAsyncThunk<
 const coursesSlice = createSlice({
   name: 'playlist',
   initialState,
-  reducers: {
-    addVideoToPlaylist: (state, action) => {
-      const { playlistId, video } = action.payload;
-
-      // Only update if playlist is already fully loaded in the store
-      const playlist = state[playlistId];
-
-      console.log(playlistId, video, playlist);
-      if (playlist && Array.isArray(playlist.playlistVideos)) {
-        playlist.playlistVideos.push({
-          id: video.id,
-          title: video.snippet.title,
-          description: video.snippet.description,
-          thumbnails: {
-            default: { url: video.snippet.thumbnails.default.url },
-          },
-          completed: false,
-          open: false,
-        });
-      }
-    },
-    removeCourse: (state, action: PayloadAction<{ slug: string }>) => {
-      delete state[action.payload.slug];
-    },
-    toggleVideoCompleted: (
-      state,
-      action: PayloadAction<{ slug: string; id: string }>
-    ) => {
-      const { slug, id } = action.payload;
-      if (state[slug]) {
-        state[slug].playlistVideos = state[slug].playlistVideos.map((video) =>
-          video.id === id ? { ...video, completed: !video.completed } : video
-        );
-      }
-    },
-    toggleVideoOpen: (
-      state,
-      action: PayloadAction<{ slug: string; id: string }>
-    ) => {
-      const { slug, id } = action.payload;
-      if (state[slug]) {
-        state[slug].playlistVideos = state[slug].playlistVideos.map((video) =>
-          video.id === id ? { ...video, open: !video.open } : video
-        );
-      }
-    },
-    setVideoFilter: (
-      state,
-      action: PayloadAction<{
-        slug: string;
-        filterValue: PlaylistState['filterValue'];
-      }>
-    ) => {
-      const { slug, filterValue } = action.payload;
-      if (state[slug]) {
-        state[slug].filterValue = filterValue;
-      }
-    },
-    markVideoCompleted: (state, action: PayloadAction<string>) => {
-      for (const course of Object.values(state)) {
-        const video = course.playlistVideos.find(
-          (v) => v.id === action.payload
-        );
-        if (video) {
-          video.completed = true;
-          break;
-        }
-      }
-    },
-  },
+  reducers,
   extraReducers: (builder) => {
     builder
       .addCase(fetchPlaylist.pending, (state, action) => {

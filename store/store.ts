@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { coursesReducer } from './courses';
 import { playlistReducer } from './playlist';
 import { videoUploadReducer } from './video/videoUploadSlice';
-import { playlistApi } from './apiServices';
+import { playlistApi, removeVideoApi } from './apiServices';
 
 export const makeStore = () =>
   configureStore({
@@ -11,10 +11,13 @@ export const makeStore = () =>
       playlist: playlistReducer,
       videoUpload: videoUploadReducer,
       [playlistApi.reducerPath]: playlistApi.reducer, // Add the RTK Query reducer
+      [removeVideoApi.reducerPath]: removeVideoApi.reducer,
     },
     // Adding middleware to handle RTK Query's caching and networking
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(playlistApi.middleware),
+      getDefaultMiddleware()
+        .concat(playlistApi.middleware)
+        .concat(removeVideoApi.middleware),
   });
 
 export type AppStore = ReturnType<typeof makeStore>;
