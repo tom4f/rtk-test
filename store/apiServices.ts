@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const apiUrl = '/api';
 
-const getPlaylist = async (playlistId: string) => {
+const getPlaylist = async (playlistId: number) => {
   const request = {
     method: 'POST',
     headers: {
@@ -22,12 +22,12 @@ const getSlug = async (id: string) => {
     },
     body: JSON.stringify({ id }),
   };
-  const response = await fetch(`${apiUrl}/slug/index.php`, request);
+  const response = await fetch(`${apiUrl}/slug`, request);
   return response;
 };
 
 const getAllPlaylists = async () => {
-  const url = `${apiUrl}/slug/index.php`;
+  const url = `${apiUrl}/slug`;
   console.log(url);
   const response = await fetch(url, {
     method: 'GET',
@@ -40,19 +40,19 @@ const getAllPlaylists = async () => {
   return response;
 };
 
+export { getPlaylist, getSlug, getAllPlaylists };
+
 // Define the API slice
 export const playlistApi = createApi({
   reducerPath: 'playlistApi', // A unique name for the slice
-  baseQuery: fetchBaseQuery({ baseUrl: `${apiUrl}/slug/index.php` }), // Define base URL for your API
+  baseQuery: fetchBaseQuery({ baseUrl: apiUrl }), // Define base URL for your API
   endpoints: (builder) => ({
     // Define the "getAllPlaylists" endpoint
     getAllPlaylists: builder.query<any, void>({
-      query: () => 'playlists', // The API endpoint for fetching playlists
+      query: () => 'slug/index.php', // The API endpoint for fetching playlists
     }),
     // Add other API endpoints here as needed
   }),
 });
-
-export { getPlaylist, getSlug, getAllPlaylists };
 
 export const { useGetAllPlaylistsQuery } = playlistApi; // Hook for using the query

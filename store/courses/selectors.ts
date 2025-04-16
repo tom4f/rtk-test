@@ -13,7 +13,7 @@ export const isOpenMapSelector = createSelector(
     }, {} as Record<string, boolean>)
 );
 
-export const coursesSelector = createSelector(
+const coursesSelector = createSelector(
   (state: RootState) => state.coursePage,
   (coursePage) => Object.keys(coursePage)
 );
@@ -40,21 +40,8 @@ const isCompletedSelector = (
   return video?.completed || false;
 };
 
-const isOpenSelector = (
-  state: RootState,
-  slug: string,
-  id: string
-): boolean => {
-  const video = state.coursePage[slug]?.playlistVideos.find(
-    (video) => video.id === id
-  );
-  return video?.open || false;
-};
-
 const videoFilterSelector = (state: RootState, slug: string) =>
   state.coursePage[slug]?.filterValue;
-const playlistTitleSelector = (state: RootState, slug: string) =>
-  state.coursePage[slug]?.title || '';
 
 const getFilteredVideosSelector = (slug: string) =>
   createSelector(
@@ -78,10 +65,9 @@ export {
   playlistVideosSelector,
   getFilteredVideosSelector,
   isCompletedSelector,
-  isOpenSelector,
   videoFilterSelector,
   coursePageLoadingSelector,
   coursePageErrorSelector,
-  playlistTitleSelector,
   courseDataSelector,
+  coursesSelector,
 };

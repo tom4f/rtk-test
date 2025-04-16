@@ -9,7 +9,7 @@ export const CoursesStoreProvider = ({
   initialCourses = {},
 }: {
   children: React.ReactNode;
-  initialCourses?: Record<string, string>;
+  initialCourses?: Record<string, number>;
 }) => {
   const storeRef = useRef<AppStore | null>(null);
 

@@ -8,6 +8,7 @@ import styles from './../CoursesList/CoursesListItem.module.scss';
 //import { fetchAllPlaylists } from '@/store/playlist';
 import { useGetAllPlaylistsQuery } from '@/store/apiServices';
 import { useAppSelector } from '@/store/hooks';
+import { playlist } from '@/store/playlist/selectors';
 
 export const AddCourseForm = () => {
   // Use the RTK Query hook to fetch playlists
@@ -18,13 +19,12 @@ export const AddCourseForm = () => {
   } = useGetAllPlaylistsQuery();
 
   const availableCoursesRTKQuery = Object.keys(data || {}) as string[];
-  console.log({ RTKQueryIsLoading }, { RTKQueryError }, data);
 
   const dispatch = useAppDispatch();
 
-  const { playlistIds, loading, error } = useAppSelector(
-    (state) => state.playlist
-  );
+  console.log('renders');
+
+  const { playlistIds, loading, error } = useAppSelector(playlist);
 
   /*   useEffect(() => {
     if (!playlistIds.length) {

@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { coursesReducer } from './courses';
 import { playlistReducer } from './playlist';
+import { videoUploadReducer } from './video/videoUploadSlice';
 import { playlistApi } from './apiServices';
 
 export const makeStore = () =>
@@ -8,6 +9,7 @@ export const makeStore = () =>
     reducer: {
       coursePage: coursesReducer,
       playlist: playlistReducer,
+      videoUpload: videoUploadReducer,
       [playlistApi.reducerPath]: playlistApi.reducer, // Add the RTK Query reducer
     },
     // Adding middleware to handle RTK Query's caching and networking

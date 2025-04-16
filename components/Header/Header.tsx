@@ -16,6 +16,9 @@ export const Header = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
+              <Link href='/add-video'>Add video</Link>
+            </li>
+            <li>
               <Link href='/'>Home</Link>
             </li>
             {courses.map((slug) => (

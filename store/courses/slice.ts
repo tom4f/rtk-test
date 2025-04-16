@@ -2,6 +2,27 @@ import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { getPlaylist } from '../apiServices';
 import { RootState, AppDispatch } from '../store';
 
+export type VideoJsonType = {
+  id: string;
+  snippet: {
+    title: string;
+    description: string;
+    thumbnails: {
+      default: {
+        url: string;
+      };
+    };
+  };
+};
+
+export type FetchPlaylistJsonResponse = {
+  playlist: {
+    title: string;
+    id: number;
+  };
+  playlistVideos: VideoJsonType[];
+};
+
 export type VideoType = {
   id: string;
   completed: boolean;
@@ -50,15 +71,18 @@ export const fetchPlaylist = createAsyncThunk<
   const response = await getPlaylist(playlistId);
   if (!response.ok) return rejectWithValue('Failed to fetch playlist');
 
-  const { playlist, playlistVideos } = await response.json();
+  const { playlist, playlistVideos } =
+    (await response.json()) as FetchPlaylistJsonResponse;
   return {
     slug,
-    title: playlist.localized.title,
-    playlistVideos: playlistVideos.map((video: VideoType) => ({
+    title: playlist.title,
+    playlistVideos: playlistVideos.map((video: VideoJsonType) => ({
       id: video.id,
-      title: video.title,
-      description: video.description,
-      thumbnails: { default: { url: video.thumbnails.default.url } },
+      title: video.snippet.title,
+      description: video.snippet.description,
+      thumbnails: {
+        default: { url: video.snippet.thumbnails.default.url },
+      },
       completed: false,
       open: false,
     })),
@@ -69,6 +93,26 @@ const coursesSlice = createSlice({
   name: 'playlist',
   initialState,
   reducers: {
+    addVideoToPlaylist: (state, action) => {
+      const { playlistId, video } = action.payload;
+
+      // Only update if playlist is already fully loaded in the store
+      const playlist = state[playlistId];
+
+      console.log(playlistId, video, playlist);
+      if (playlist && Array.isArray(playlist.playlistVideos)) {
+        playlist.playlistVideos.push({
+          id: video.id,
+          title: video.snippet.title,
+          description: video.snippet.description,
+          thumbnails: {
+            default: { url: video.snippet.thumbnails.default.url },
+          },
+          completed: false,
+          open: false,
+        });
+      }
+    },
     removeCourse: (state, action: PayloadAction<{ slug: string }>) => {
       delete state[action.payload.slug];
     },
@@ -155,6 +199,7 @@ const coursesSlice = createSlice({
 });
 
 export const {
+  addVideoToPlaylist,
   toggleVideoCompleted,
   toggleVideoOpen,
   setVideoFilter,

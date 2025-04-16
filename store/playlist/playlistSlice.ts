@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { getAllPlaylists } from '../apiServices';
 
 type PlaylistState = {
-  playlistIds: Record<string, string>;
+  playlistIds: Record<string, number>;
   loading: boolean;
   error: string | null;
 };
@@ -37,7 +37,7 @@ const playlistSlice = createSlice({
   name: 'playlist',
   initialState,
   reducers: {
-    setCourses: (state, action: PayloadAction<Record<string, string>>) => {
+    setCourses: (state, action: PayloadAction<Record<string, number>>) => {
       state.playlistIds = action.payload;
     },
   },
