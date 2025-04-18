@@ -22,8 +22,6 @@ export const AddCourseForm = () => {
 
   const dispatch = useAppDispatch();
 
-  console.log('renders');
-
   const { playlistIds, loading, error } = useAppSelector(playlist);
 
   /*   useEffect(() => {

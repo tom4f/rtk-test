@@ -2,19 +2,25 @@
 
 import { useState, FormEvent, useEffect } from 'react';
 import { useAppSelector } from '@/store/hooks';
-import { playlist } from '@/store/playlist/selectors';
+// import { playlist } from '@/store/playlist/selectors';
 import { useAppDispatch } from '@/store/hooks';
-import { uploadVideo, resetUploadState } from '@/store/video/videoUploadSlice';
+// import { uploadVideo, resetUploadState } from '@/store/video/videoUploadSlice';
 import { VideoJsonType } from '@/store/courses';
 import { ChangeEvent } from 'react';
 import { fetchPlaylist } from '@/store/courses';
 import { playlistVideosSelector } from '@/store/courses';
-import { useDeleteVideoMutation } from '@/store/apiServices';
+import {
+  useDeleteVideoMutation,
+  useCreatePlaylistMutation,
+  useDeletePlaylistMutation,
+  useGetAllPlaylistsQuery,
+  useAddVideoMutation,
+} from '@/store/apiServices';
 //import { fetchPlaylist } from '@/store/courses';
 
 import { addVideoToPlaylist } from '@/store/courses';
 
-import { videoUpload } from '@/store/video/videoUploadSelectors';
+// import { videoUpload } from '@/store/video/videoUploadSelectors';
 
 const getPlaylistName = (
   playlistIds: Record<string, number>,
@@ -23,13 +29,54 @@ const getPlaylistName = (
 
 export const AddVideo = () => {
   const dispatch = useAppDispatch();
+  const [newPlaylistName, setNewPlaylistName] = useState('');
   const [videoId, setVideoId] = useState('');
   const [playlistId, setPlaylistId] = useState(0);
   const [videoData, setVideoData] = useState<VideoJsonType | null>(null);
-  const [deleteVideo, { isLoading: isDeleting }] = useDeleteVideoMutation();
+  const [
+    addVideo,
+    {
+      isLoading: isAddingVideo,
+      isError: isAddingVideoError,
+      isSuccess: isAddingVideoSuccess,
+    },
+  ] = useAddVideoMutation();
+  const [
+    deleteVideo,
+    {
+      isLoading: isDeletingVideo,
+      isError: isDeletingVideoError,
+      isSuccess: isDeletingVideoSuccess,
+    },
+  ] = useDeleteVideoMutation();
+  const [
+    createPlaylist,
+    {
+      isLoading: isCreatingPlaylist,
+      isError: isCreatingPlaylistError,
+      isSuccess: isCreatingPlaylistSuccess,
+    },
+  ] = useCreatePlaylistMutation();
+  const [
+    deletePlaylist,
+    {
+      isLoading: isDeletingPlaylist,
+      isError: isDeletingPlaylistError,
+      isSuccess: isDeletingPlaylistSuccess,
+    },
+  ] = useDeletePlaylistMutation();
 
-  const { playlistIds } = useAppSelector(playlist);
-  const { success, loading, error } = useAppSelector(videoUpload);
+  // const { playlistIds } = useAppSelector(playlist);
+  const {
+    data,
+    isSuccess: isGetPlaylistSuccess,
+    isError: isGetPlaylistError,
+    isLoading: isGetPlaylistLoading,
+  } = useGetAllPlaylistsQuery();
+
+  const playlistIds = data || {};
+  console.log(playlistIds);
+  // const { success, loading, error } = useAppSelector(videoUpload);
 
   const playlistName = Object.keys(playlistIds).find(
     (key) => playlistIds[key] === playlistId
@@ -40,7 +87,7 @@ export const AddVideo = () => {
   });
 
   useEffect(() => {
-    if (success) {
+    if (isAddingVideoSuccess) {
       if (playlistName && videoData) {
         dispatch(
           addVideoToPlaylist({ playlistId: playlistName, video: videoData })
@@ -50,15 +97,15 @@ export const AddVideo = () => {
       // if (playlistName) dispatch(fetchPlaylist(playlistName));
 
       const timeout = setTimeout(() => {
-        dispatch(resetUploadState());
+        // dispatch(resetUploadState());
         setVideoId('');
       }, 2000);
 
       return () => clearTimeout(timeout);
     }
-  }, [success, dispatch, playlistId, videoData, playlistName]);
+  }, [isAddingVideoSuccess, dispatch, playlistId, videoData, playlistName]);
 
-  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const onAddVideo = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const youtubeUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&id=${videoId}&key=AIzaSyDUUXZp0tzRc7IsZtKBX-xNYbRWUwLJC68`;
@@ -82,7 +129,8 @@ export const AddVideo = () => {
 
     if (video) {
       setVideoData(video);
-      dispatch(uploadVideo(payload));
+      // dispatch(uploadVideo(payload));
+      addVideo(payload);
     } else {
       console.warn('No video found');
     }
@@ -101,8 +149,6 @@ export const AddVideo = () => {
 
     try {
       await deleteVideo({ playlistId, videoId }).unwrap();
-      alert('Video deleted');
-      // optionally refetch playlist:
       dispatch(fetchPlaylist(playlistName));
     } catch (err) {
       console.error('Failed to delete video', err);
@@ -110,56 +156,111 @@ export const AddVideo = () => {
     }
   };
 
-  return (
-    <form onSubmit={(e) => onSubmit(e)}>
-      <label htmlFor='video-id'>Video ID</label>
-      <br />
-      <input
-        id='video-id'
-        name='video-id'
-        value={videoId}
-        onChange={(event) => setVideoId(event.target.value)}
-      />
-      <br />
-      <br />
-      <label htmlFor='playlist'>Choose a playlist:</label>
-      <br />
-      <select
-        required
-        name='playlist'
-        id='playlist'
-        value={playlistId}
-        onChange={(event) => onChangePlaylist(event)}
-      >
-        <option key={0} value=''>
-          vyber
-        </option>
-        {Object.entries(playlistIds).map(([key, value]) => (
-          <option key={key} value={value}>
-            {key}
-          </option>
-        ))}
-      </select>
-      <br />
-      <br />
-      <button type='submit'>Add video to playlist</button>
-      {success && <>Success...</>}
-      {error && <>Error...</>}
-      {loading && <>Loading...</>}
-      {isDeleting && <>Deleting...</>}
+  const onCreatePlaylist = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    createPlaylist({ playlistName: newPlaylistName });
+  };
 
-      {videosInPlaylist?.length && (
-        <ul>
-          {videosInPlaylist?.map((video) => (
-            <li key={video.id}>
-              {video.title}
-              <button type='button' onClick={() => removeVideo(video.id)}>
-                remove video
-              </button>
-            </li>
+  const onDeletePlaylist = () => {
+    deletePlaylist({ playlistId });
+  };
+
+  if (isGetPlaylistError) {
+    return <>Playlists loading error...</>;
+  }
+
+  return (
+    <>
+      {isGetPlaylistSuccess && <>Playlists loading success...</>}
+      {isGetPlaylistLoading && <>loading playlists...</>}
+      <form onSubmit={(e) => onAddVideo(e)}>
+        <label htmlFor='video-id'>Video ID</label>
+        <br />
+        <input
+          id='video-id'
+          name='video-id'
+          value={videoId}
+          onChange={(event) => setVideoId(event.target.value)}
+        />
+        <br />
+        <br />
+        <button type='submit' name=''>
+          Add video to playlist
+        </button>
+        <br />
+        <br />
+        <label htmlFor='playlist'>Choose a playlist:</label>
+        <br />
+        <select
+          required
+          name='playlist'
+          id='playlist'
+          value={playlistId}
+          onChange={(event) => onChangePlaylist(event)}
+        >
+          <option key={0} value=''>
+            vyber
+          </option>
+          {Object.entries(playlistIds).map(([key, value]) => (
+            <option key={key} value={value}>
+              {key}
+            </option>
           ))}
-        </ul>
-      )}
-    </form>
+        </select>
+
+        {isAddingVideo && <>adding video...</>}
+        {isAddingVideoError && <>adding video error...</>}
+        {isAddingVideoSuccess && <>video added...</>}
+        <br />
+        <br />
+
+        {videosInPlaylist?.length ? (
+          <>
+            <ul>
+              {videosInPlaylist?.map((video) => (
+                <li key={video.id}>
+                  {video.title}
+                  <button type='button' onClick={() => removeVideo(video.id)}>
+                    remove video
+                  </button>
+                </li>
+              ))}
+            </ul>
+            {isDeletingVideoError && <>Video deletion error...</>}
+            {isDeletingVideo && <>Deleting video...</>}
+          </>
+        ) : (
+          <>{isDeletingVideoSuccess && <>Video deleted...</>}</>
+        )}
+        <br />
+      </form>
+      <br />
+      <br />
+      <form onSubmit={onCreatePlaylist}>
+        <label htmlFor='playlist-name'>New Playlist</label>
+        <br />
+        <input
+          id='playlist-name'
+          name='playlist-name'
+          value={newPlaylistName}
+          onChange={(event) => setNewPlaylistName(event.target.value)}
+        />
+        <br />
+        <button type='submit'>Create new playlist</button>
+        <br />
+        {isCreatingPlaylist && <>Creating playlist...</>}
+        {isCreatingPlaylistSuccess && <>Playlist created...</>}
+        {isCreatingPlaylistError && <>Playlist creation error...</>}
+      </form>
+      <br />
+      <br />
+      <button type='button' onClick={onDeletePlaylist}>
+        Remove playlist
+      </button>
+      <br />
+      {isDeletingPlaylist && <>Deleting playlist...</>}
+      {isDeletingPlaylistSuccess && <>Playlist deleted...</>}
+      {isDeletingPlaylistError && <>Playlist deletion error...</>}
+    </>
   );
 };
