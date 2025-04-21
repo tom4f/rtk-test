@@ -1,6 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import type { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { VideoJsonType } from './courses';
+import { FetchPlaylistResponse, FetchPlaylistJsonResponse } from './courses';
+import { RootState } from './store';
 const apiUrl = '/api';
 
 const getPlaylist = async (playlistId: number) => {
@@ -43,8 +45,8 @@ const delayedBaseQuery: BaseQueryFn<any, unknown, unknown> = async (
   return rawBaseQuery(args, api, extraOptions);
 };
 
-export const playlistApi = createApi({
-  reducerPath: 'playlistApi',
+export const playlistsApi = createApi({
+  reducerPath: 'playlistsApi',
   baseQuery: delayedBaseQuery,
   tagTypes: ['Playlists'],
   endpoints: (builder) => ({
@@ -70,6 +72,12 @@ export const playlistApi = createApi({
     }),
   }),
 });
+
+export const {
+  useGetAllPlaylistsQuery,
+  useCreatePlaylistMutation,
+  useDeletePlaylistMutation,
+} = playlistsApi;
 
 export const videoApi = createApi({
   reducerPath: 'videoApi',
@@ -98,9 +106,44 @@ export const videoApi = createApi({
   }),
 });
 
-export const {
-  useGetAllPlaylistsQuery,
-  useCreatePlaylistMutation,
-  useDeletePlaylistMutation,
-} = playlistApi;
 export const { useDeleteVideoMutation, useAddVideoMutation } = videoApi;
+
+// playlistApi.ts
+export const playlistApi = createApi({
+  reducerPath: 'playlistApi',
+  baseQuery: fetchBaseQuery({ baseUrl: '/api' }), // or custom fetchFn if needed
+  endpoints: (builder) => ({
+    getPlaylist: builder.query<FetchPlaylistResponse, string>({
+      async queryFn(slug, _api) {
+        const state = _api.getState() as RootState;
+        const playlistId = state.playlist.playlistIds[slug];
+        if (!playlistId)
+          return { error: { status: 404, data: 'Playlist ID not found' } };
+
+        const response = await getPlaylist(playlistId);
+        if (!response.ok)
+          return { error: { status: 500, data: 'Failed to fetch playlist' } };
+
+        const json = (await response.json()) as FetchPlaylistJsonResponse;
+        return {
+          data: {
+            slug,
+            title: json.playlist.title,
+            playlistVideos: json.playlistVideos.map((video: VideoJsonType) => ({
+              id: video.id,
+              title: video.snippet.title,
+              description: video.snippet.description,
+              thumbnails: {
+                default: { url: video.snippet.thumbnails.default.url },
+              },
+              completed: false,
+              open: false,
+            })),
+          },
+        };
+      },
+    }),
+  }),
+});
+
+export const { useGetPlaylistQuery, useLazyGetPlaylistQuery } = playlistApi;

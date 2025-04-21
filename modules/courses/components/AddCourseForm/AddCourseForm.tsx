@@ -12,11 +12,7 @@ import { playlist } from '@/store/playlist/selectors';
 
 export const AddCourseForm = () => {
   // Use the RTK Query hook to fetch playlists
-  const {
-    data,
-    error: RTKQueryError,
-    isLoading: RTKQueryIsLoading,
-  } = useGetAllPlaylistsQuery();
+  const { data, isLoading: RTKQueryIsLoading } = useGetAllPlaylistsQuery();
 
   const availableCoursesRTKQuery = Object.keys(data || {}) as string[];
 

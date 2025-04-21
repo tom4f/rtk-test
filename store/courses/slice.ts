@@ -45,7 +45,7 @@ export type PlaylistState = {
   filterValue: 'all' | 'completed' | 'not-completed';
 };
 
-type FetchPlaylistResponse = {
+export type FetchPlaylistResponse = {
   slug: string;
   title: string;
   playlistVideos: VideoType[];

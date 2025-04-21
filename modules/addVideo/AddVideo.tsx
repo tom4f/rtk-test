@@ -1,22 +1,24 @@
 'use client';
 
 import { useState, FormEvent, useEffect } from 'react';
-import { useAppSelector } from '@/store/hooks';
+//import { useAppSelector } from '@/store/hooks';
 // import { playlist } from '@/store/playlist/selectors';
 import { useAppDispatch } from '@/store/hooks';
 // import { uploadVideo, resetUploadState } from '@/store/video/videoUploadSlice';
 import { VideoJsonType } from '@/store/courses';
 import { ChangeEvent } from 'react';
-import { fetchPlaylist } from '@/store/courses';
-import { playlistVideosSelector } from '@/store/courses';
+// import { fetchPlaylist } from '@/store/courses';
+//import { playlistVideosSelector } from '@/store/courses';
 import {
   useDeleteVideoMutation,
   useCreatePlaylistMutation,
   useDeletePlaylistMutation,
   useGetAllPlaylistsQuery,
   useAddVideoMutation,
+  useLazyGetPlaylistQuery,
 } from '@/store/apiServices';
-//import { fetchPlaylist } from '@/store/courses';
+
+import { extractYouTubeId } from './extractYouTubeId';
 
 import { addVideoToPlaylist } from '@/store/courses';
 
@@ -33,6 +35,7 @@ export const AddVideo = () => {
   const [videoId, setVideoId] = useState('');
   const [playlistId, setPlaylistId] = useState(0);
   const [videoData, setVideoData] = useState<VideoJsonType | null>(null);
+
   const [
     addVideo,
     {
@@ -75,16 +78,22 @@ export const AddVideo = () => {
   } = useGetAllPlaylistsQuery();
 
   const playlistIds = data || {};
-  console.log(playlistIds);
+
   // const { success, loading, error } = useAppSelector(videoUpload);
 
   const playlistName = Object.keys(playlistIds).find(
     (key) => playlistIds[key] === playlistId
   );
 
-  const videosInPlaylist = useAppSelector((state) => {
+  /*   const videosInPlaylist = useAppSelector((state) => {
     return playlistName ? playlistVideosSelector(state, playlistName) : null;
-  });
+  }); */
+
+  const [trigger, { data: selectedPlaylist }] = useLazyGetPlaylistQuery();
+
+  const videosInPlaylist = selectedPlaylist
+    ? selectedPlaylist?.playlistVideos
+    : [];
 
   useEffect(() => {
     if (isAddingVideoSuccess) {
@@ -108,7 +117,16 @@ export const AddVideo = () => {
   const onAddVideo = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const youtubeUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&id=${videoId}&key=AIzaSyDUUXZp0tzRc7IsZtKBX-xNYbRWUwLJC68`;
+    const youTubeId = extractYouTubeId(videoId);
+
+    if (!youTubeId) {
+      alert('Video ID not found');
+      return;
+    }
+
+    setVideoId(youTubeId);
+
+    const youtubeUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&id=${youTubeId}&key=AIzaSyDUUXZp0tzRc7IsZtKBX-xNYbRWUwLJC68`;
     const ytResponse = await fetch(youtubeUrl);
     const ytData = await ytResponse.json();
 
@@ -117,7 +135,7 @@ export const AddVideo = () => {
       alert('Video not found');
       return;
     }
-    if (videosInPlaylist?.some((v) => v.id === videoId)) {
+    if (videosInPlaylist?.some((v) => v.id === youTubeId)) {
       alert('This video is already in the playlist');
       return;
     }
@@ -140,7 +158,8 @@ export const AddVideo = () => {
     setPlaylistId(+event.target.value);
     const playlistName = getPlaylistName(playlistIds, +event.target.value);
     if (playlistName) {
-      dispatch(fetchPlaylist(playlistName));
+      // dispatch(fetchPlaylist(playlistName));
+      trigger(playlistName);
     }
   };
 
@@ -149,7 +168,8 @@ export const AddVideo = () => {
 
     try {
       await deleteVideo({ playlistId, videoId }).unwrap();
-      dispatch(fetchPlaylist(playlistName));
+      // dispatch(fetchPlaylist(playlistName));
+      trigger(playlistName);
     } catch (err) {
       console.error('Failed to delete video', err);
       alert('Failed to delete');
@@ -179,7 +199,7 @@ export const AddVideo = () => {
         <input
           id='video-id'
           name='video-id'
-          value={videoId}
+          value={videoId || ''}
           onChange={(event) => setVideoId(event.target.value)}
         />
         <br />

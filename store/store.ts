@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { coursesReducer } from './courses';
 import { playlistReducer } from './playlist';
 import { videoUploadReducer } from './video/videoUploadSlice';
-import { playlistApi, videoApi } from './apiServices';
+import { playlistsApi, videoApi, playlistApi } from './apiServices';
 
 export const makeStore = () =>
   configureStore({
@@ -10,13 +10,15 @@ export const makeStore = () =>
       coursePage: coursesReducer,
       playlist: playlistReducer,
       videoUpload: videoUploadReducer,
-      [playlistApi.reducerPath]: playlistApi.reducer,
+      [playlistsApi.reducerPath]: playlistsApi.reducer,
       [videoApi.reducerPath]: videoApi.reducer,
+      [playlistApi.reducerPath]: playlistApi.reducer,
     },
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware()
-        .concat(playlistApi.middleware)
-        .concat(videoApi.middleware),
+        .concat(playlistsApi.middleware)
+        .concat(videoApi.middleware)
+        .concat(playlistApi.middleware),
   });
 
 export type AppStore = ReturnType<typeof makeStore>;
